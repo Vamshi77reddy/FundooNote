@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundooNote", "FundooNote\FundooNote.csproj", "{1A60C47E-7292-4773-A587-F2C358ED19E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{14EEDFCC-D71A-4628-8757-DC93959F738D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{14EEDFCC-D71A-4628-8757-DC93959F738D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLayer", "CommonLayer\CommonLayer.csproj", "{4F533676-6DC0-40B8-97F5-2B4F2E6EF8EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLayer", "CommonLayer\CommonLayer.csproj", "{4F533676-6DC0-40B8-97F5-2B4F2E6EF8EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepoLayer", "RepoLayer\RepoLayer.csproj", "{24B00A38-F710-4BAF-B8C5-8D03CF551E16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoLayer", "RepoLayer\RepoLayer.csproj", "{24B00A38-F710-4BAF-B8C5-8D03CF551E16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundooNoteApp", "FundooNoteApp\FundooNoteApp.csproj", "{E548A268-0FC1-40E1-9FDB-C665F59347D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1A60C47E-7292-4773-A587-F2C358ED19E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A60C47E-7292-4773-A587-F2C358ED19E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A60C47E-7292-4773-A587-F2C358ED19E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A60C47E-7292-4773-A587-F2C358ED19E4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{14EEDFCC-D71A-4628-8757-DC93959F738D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{14EEDFCC-D71A-4628-8757-DC93959F738D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14EEDFCC-D71A-4628-8757-DC93959F738D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{24B00A38-F710-4BAF-B8C5-8D03CF551E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24B00A38-F710-4BAF-B8C5-8D03CF551E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24B00A38-F710-4BAF-B8C5-8D03CF551E16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E548A268-0FC1-40E1-9FDB-C665F59347D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E548A268-0FC1-40E1-9FDB-C665F59347D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E548A268-0FC1-40E1-9FDB-C665F59347D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E548A268-0FC1-40E1-9FDB-C665F59347D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
