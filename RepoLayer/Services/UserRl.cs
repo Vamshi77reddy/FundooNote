@@ -1,10 +1,14 @@
 ﻿using CommonLayer.Model;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using RepoLayer.Context;
 using RepoLayer.Entity;
 using RepoLayer.Interface;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
+using System.Security.Claims;
 using System.Text;
 
 namespace RepoLayer.Services
@@ -54,5 +58,68 @@ namespace RepoLayer.Services
                 throw new Exception("Error in base64Encode" + ex.Message);
             }
         }
+        public static string Decrypt(string password)
+        {
+            if (string.IsNullOrEmpty(password))
+            {
+                return null;
+            }
+            else
+            {
+                byte[] encryptedPass = Convert.FromBase64String(password);
+                string decryptedPass = ASCIIEncoding.ASCII.GetString(encryptedPass);
+                return decryptedPass;
+            }
+        }
+        public string Login(LoginModel loginModel)
+        {
+            try
+            {
+                UserEntity userEntity = new UserEntity();
+                userEntity = this.fundooContext.UserTable.FirstOrDefault(x => x.EmailId == loginModel.EmailId );
+                string pass = Decrypt(userEntity.Password);
+                if (pass == loginModel.Password && userEntity!=null)
+                {
+                    var token = this.GenerateJwtToken(userEntity.EmailId, userEntity.UserId);
+                    return token;
+                }
+                else
+                {
+                    return null;
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public string GenerateJwtToken(string EmailId, long UserId)
+        {
+            try
+            {
+                var LoginTokenHandler = new JwtSecurityTokenHandler();
+                var LoginTokenKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(this.configuration[("Jwt:Key")]));
+                var LoginTokenDescriptor = new SecurityTokenDescriptor
+                {
+                    Subject = new ClaimsIdentity(new Claim[]
+                    {
+                        new Claim(ClaimTypes.Email, EmailId),
+                        new Claim("UserId",UserId.ToString())
+                    }),
+                    Expires = DateTime.UtcNow.AddHours(1),
+                    SigningCredentials=new SigningCredentials(LoginTokenKey,SecurityAlgorithms.HmacSha256Signature)
+                };
+                var token = LoginTokenHandler.CreateToken(LoginTokenDescriptor);
+                return LoginTokenHandler.WriteToken(token);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+
     }
 }

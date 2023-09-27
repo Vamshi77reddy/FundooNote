@@ -29,7 +29,7 @@ namespace FundooNoteApp.Controllers
                 var result = userBl.UserRegistrations(registration);
                 if (result != null)
                 {
-                    return Ok(new ResponseModel<UserEntity> { Status = true, Message = "UserRegistration Successfull", Data = result });
+                    return Ok(new ResponseModel<UserEntity> { Status = true, Message = "UserRegistration Successful", Data = result });
                 }
                 else
                 {
@@ -38,6 +38,26 @@ namespace FundooNoteApp.Controllers
 
             }
             catch(Exception ex) { throw ex; }
+        }
+
+        [HttpPost("Login")]
+        public IActionResult Login(LoginModel loginModel)
+        {
+
+            try
+            {
+                var result = userBl.Login(loginModel);
+                if (result != null)
+                {
+                    return Ok(new ResponseModel<string> { Status = true, Message = "Login Successful", Data = result });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<string> { Status = false, Message = "Login Failed" });                                                                            
+                }
+
+            }
+            catch (Exception ex) { throw ex; }
         }
 
     }

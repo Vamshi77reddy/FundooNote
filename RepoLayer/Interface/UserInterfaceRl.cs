@@ -9,5 +9,7 @@ namespace RepoLayer.Interface
     public interface UserInterfaceRl
     {
         public UserEntity UserRegistrations(UserRegistration userRegistration);
+        public string Login(LoginModel loginModel);
+
     }
 }

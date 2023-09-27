@@ -11,7 +11,7 @@ namespace BusinessLayer.Service
 
     public class UserBl : IuserBl
     {
-      private readonly  UserInterfaceRl userinterfaceRl;
+        private readonly UserInterfaceRl userinterfaceRl;
         public UserBl(UserInterfaceRl userinterfaceRl)
         {
             this.userinterfaceRl = userinterfaceRl;
@@ -24,7 +24,16 @@ namespace BusinessLayer.Service
             {
                 return this.userinterfaceRl.UserRegistrations(userRegistration);
             }
-            catch(Exception ex) { throw ex; }
+            catch (Exception ex) { throw ex; }
+        }
+        public string Login(LoginModel loginModel)
+        {
+            try
+            {
+                return userinterfaceRl.Login(loginModel);
+            }
+            catch (Exception ex) { throw ex; }
+
         }
     }
 }
