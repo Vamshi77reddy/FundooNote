@@ -59,3 +59,13 @@ C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.
 C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\CommonLayer.dll
 C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
 C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\CommonLayer.pdb
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\Automatonymous.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\GreenPipes.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\MassTransit.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\MassTransit.AspNetCoreIntegration.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\MassTransit.RabbitMqTransport.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\NewId.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll

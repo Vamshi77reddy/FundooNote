@@ -35,5 +35,31 @@ namespace BusinessLayer.Service
             catch (Exception ex) { throw ex; }
 
         }
+        //public ForgetPasswordModel UserForgetPassword(string email)
+        //{
+        //    try
+        //    {
+        //        return userinterfaceRl.UserForgetPassword(email);
+        //    }
+        //    catch (Exception ex)
+        //    { throw ex; }
+        //}
+
+        public ForgetPasswordModel UserForgetPassword(ForgetPasswordModel forgetPasswordModel)
+        {
+            try
+            {
+             return userinterfaceRl.UserForgetPassword(forgetPasswordModel);
+            }catch (Exception ex) 
+            { throw ex; } 
+        }
+
+        public ResetPasswordModel ResetPassword(string email, ResetPasswordModel resetPasswordModel)
+        {
+            try {
+            return userinterfaceRl.ResetPassword(email, resetPasswordModel);
+            }catch (Exception ex) { throw ex; }
+        }
+
     }
 }
