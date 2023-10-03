@@ -1,6 +1,7 @@
 ﻿using Automatonymous.Binders;
 using CommonLayer.Model;
 using Microsoft.Extensions.Configuration;
+using RabbitMQ.Client;
 using RepoLayer.Context;
 using RepoLayer.Entity;
 using RepoLayer.Interface;
@@ -63,5 +64,122 @@ namespace RepoLayer.Services
                 }
             }catch (Exception ex) { throw ex; } 
         }
+        public NoteEntity UpdateNote(NotesModel notesModel,long userId,long noteId)
+        {
+            try
+            {
+                NoteEntity noteEntity = new NoteEntity();
+                noteEntity = fundooContext.NoteTable.Where(x => x.UserId == userId && x.NoteID == noteId).FirstOrDefault();
+                if (noteEntity != null)
+                {
+                    noteEntity.Title = notesModel.Title;
+                    noteEntity.Note = notesModel.Note;
+                    noteEntity.Reminder = notesModel.Reminder;
+                    noteEntity.Color = notesModel.Color;
+                    noteEntity.Image = notesModel.Image;
+                    noteEntity.IsArchive = notesModel.IsArchive;
+                    noteEntity.IsPin = notesModel.IsPin;
+                    noteEntity.IsTrash = notesModel.IsTrash;
+                    noteEntity.Createat = DateTime.Now;
+                    noteEntity.Modifiedat = DateTime.Now;
+                    fundooContext.SaveChanges();
+                    return noteEntity;
+                }
+                else
+                {
+                    return null;
+                }
+            }catch(Exception ex) { throw ex; }
+
+        }
+        public bool IsPinorNot(long noteId,long userId)
+        {
+            NoteEntity noteEntity=fundooContext.NoteTable.Where(x=>x.NoteID== noteId&& x.UserId==userId).FirstOrDefault();
+            if (noteEntity.IsPin == true)
+            {
+                noteEntity.IsPin = false;
+                fundooContext.SaveChanges() ;
+                return false;
+            }
+            else
+            {
+                noteEntity.IsPin = true; 
+                fundooContext.SaveChanges() ; 
+                return true;
+            }
+        }
+        public bool IsTrash(long userId, long noteId)
+        {
+            NoteEntity noteEntity = fundooContext.NoteTable.Where(x => x.NoteID == noteId&&x.UserId==userId).FirstOrDefault();
+            if (noteEntity.IsTrash == true)
+            {
+                noteEntity.IsTrash = false;
+                fundooContext.SaveChanges();
+                return false;
+            }
+            else
+            {
+                noteEntity.IsTrash = true;
+                fundooContext.SaveChanges();
+                return true;
+            }
+        }
+
+        public bool IsArchive(long noteId)
+        {
+            NoteEntity noteEntity = fundooContext.NoteTable.Where(x => x.NoteID == noteId).FirstOrDefault();
+            if (noteEntity.IsArchive == true)
+            {
+                noteEntity.IsArchive = false;
+                fundooContext.SaveChanges();
+                return false;
+            }
+            else
+            {
+                noteEntity.IsArchive = true;
+                fundooContext.SaveChanges();
+                return true;
+            }
+
+        }
+        public bool DeleteNote(long userId,long noteId)
+        {
+            try
+            {
+                NoteEntity noteEntity = fundooContext.NoteTable.Where(x => x.NoteID == noteId&&x.UserId==userId).FirstOrDefault();
+                if (noteEntity.IsTrash == true)
+                {
+                    fundooContext.Remove(noteEntity);
+                    fundooContext.SaveChanges();
+                    return true;
+                }
+                else
+                {
+                    noteEntity.IsTrash = true;
+                
+                    fundooContext.SaveChanges();
+                    return false;
+                }
+            }catch (Exception ex) { throw ex; }
+        }
+
+        public NoteEntity Color(long noteId,String color)
+        {
+            try
+            {
+                NoteEntity noteEntity = fundooContext.NoteTable.Where(x => x.NoteID == noteId).FirstOrDefault();
+                if (noteEntity.Color != null)
+                {
+                    noteEntity.Color = color;
+                    fundooContext.SaveChanges();
+                    return noteEntity;
+                }
+                else
+                {
+                    return null;
+                }
+            }catch(Exception ex) { throw ex; }  
+        }
+
     }
 }
