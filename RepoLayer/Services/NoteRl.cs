@@ -1,5 +1,8 @@
 ﻿using Automatonymous.Binders;
+using CloudinaryDotNet;
+using CloudinaryDotNet.Actions;
 using CommonLayer.Model;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using RabbitMQ.Client;
 using RepoLayer.Context;
@@ -10,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Linq;
 using NoteEntity = RepoLayer.Entity.NoteEntity;
 
 namespace RepoLayer.Services
@@ -125,9 +129,9 @@ namespace RepoLayer.Services
             }
         }
 
-        public bool IsArchive(long noteId)
+        public bool IsArchive(long userId,long noteId)
         {
-            NoteEntity noteEntity = fundooContext.NoteTable.Where(x => x.NoteID == noteId).FirstOrDefault();
+            NoteEntity noteEntity = fundooContext.NoteTable.Where(x => x.NoteID == noteId&&x.UserId==userId).FirstOrDefault();
             if (noteEntity.IsArchive == true)
             {
                 noteEntity.IsArchive = false;
@@ -163,11 +167,11 @@ namespace RepoLayer.Services
             }catch (Exception ex) { throw ex; }
         }
 
-        public NoteEntity Color(long noteId,String color)
+        public NoteEntity Color(long userId,long noteId,string color)
         {
             try
             {
-                NoteEntity noteEntity = fundooContext.NoteTable.Where(x => x.NoteID == noteId).FirstOrDefault();
+                NoteEntity noteEntity = fundooContext.NoteTable.Where(x => x.NoteID == noteId&&x.UserId==userId).FirstOrDefault();
                 if (noteEntity.Color != null)
                 {
                     noteEntity.Color = color;
@@ -180,6 +184,50 @@ namespace RepoLayer.Services
                 }
             }catch(Exception ex) { throw ex; }  
         }
+
+        public DateTime Reminder(long userId,long noteId,DateTime reminder)
+        {
+            try
+            {
+                NoteEntity noteEntity = fundooContext.NoteTable.Where(x => x.NoteID == noteId&&x.UserId==userId).FirstOrDefault();
+                if(noteEntity.Reminder != null)
+                {
+                    noteEntity.Reminder = reminder;
+                    fundooContext.SaveChanges();
+                    return noteEntity.Reminder;
+                }
+                return noteEntity.Reminder;
+            }catch( Exception ex) { throw ex; }
+
+        }
+        public string UploadImage(long userId,long noteid,IFormFile image) 
+        {
+            try
+            {
+                var result = fundooContext.NoteTable.Where(x => x.NoteID == noteid && x.UserId == userId).FirstOrDefault();
+                if(result != null)
+                {
+                    Account account = new Account();
+                    Cloudinary cloudinary = new Cloudinary(account);
+                    var UploadParams = new ImageUploadParams()
+                    {
+                        File = new FileDescription(image.FileName, image.OpenReadStream()),
+                    };
+                    var uploadResult = cloudinary.Upload(UploadParams);
+                    string imagePath = uploadResult.Url.ToString();
+                    result.Image = imagePath;
+                    fundooContext.SaveChanges();
+                    return "Image Upload Successful";
+
+                }
+                else
+                {
+                    return null;
+                }
+
+            }catch( Exception ex) { throw ex; }
+        }
+
 
     }
 }

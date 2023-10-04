@@ -2,6 +2,7 @@
 using BusinessLayer.Service;
 using CommonLayer.Model;
 using MassTransit.Registration;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RepoLayer.Context;
@@ -34,7 +35,7 @@ namespace FundooNoteApp.Controllers
                 }
                 else
                 {
-                    return BadRequest(new ResponseModel<NoteEntity> { Status = false, Message = "Takenote UNSuccessful" });
+                    return BadRequest(new ResponseModel<NoteEntity> { Status = false, Message = "Takenote UnSuccessful" });
                 }
             }
             catch (Exception ex) { throw ex; }
@@ -123,12 +124,17 @@ namespace FundooNoteApp.Controllers
 
         public IActionResult IsArchive( long noteId)
         {
-            var result = inoteBl.IsArchive(noteId);
+            long userId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+
+            var result = inoteBl.IsArchive(userId,noteId);
             if (result)
             {
                 return Ok(new ResponseModel<bool> { Status = true, Message = " Note Archive", Data = result });
             }
             else
+            {
+                        
+            }
             {
                 return BadRequest(new ResponseModel<bool> { Status = false, Message = " Note UnArchive", Data = result });
             }
@@ -155,7 +161,7 @@ namespace FundooNoteApp.Controllers
             try
             {
                 long userId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
-                var result = inoteBl.Color(noteId, color);
+                var result = inoteBl.Color(userId,noteId, color);
                 if (result != null)
                 {
                     return Ok(new ResponseModel<NoteEntity> { Status = true, Message = "Color changed Successful", Data = result });
@@ -163,10 +169,47 @@ namespace FundooNoteApp.Controllers
                 }
                 else
                 {
-                    return Ok(new ResponseModel<NoteEntity> { Status = true, Message = "Color change UnSuccessful", Data = result });
+                    return BadRequest(new ResponseModel<NoteEntity> { Status = false, Message = "Color change UnSuccessful", Data = result });
 
                 }
             }catch (Exception ex) { throw ex; }
         }
+        [HttpPut("Reminder")]
+        public IActionResult Reminder(long noteId,DateTime reminder)
+        {
+             long userId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+            var result= inoteBl.Reminder(userId, noteId, reminder);
+            if(result == reminder) 
+            {
+                return Ok(new ResponseModel<DateTime> { Status = true, Message = "Reminder set Successfully", Data = result });
+
+            }
+            else
+            {
+                return BadRequest(new ResponseModel<DateTime> { Status = false, Message = "Reminder set UnSuccessfully", Data = result });
+
+            }
+
+
+        }
+        [HttpPut("UploadImage")]
+        public IActionResult UploadImage(long noteId, IFormFile filePath)
+        {
+            try
+            {
+                long userId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                var result = inoteBl.UploadImage(userId, noteId, filePath);
+                if (result != null)
+                {
+                    return Ok(new ResponseModel<string> { Status = true, Message = "ImageUpload Successfully", Data = result });
+
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<string> { Status = false, Message = "ImageUpload UnSuccessfully", Data = result });
+                }
+            }catch (Exception ex) { throw ex; }
+        }
+
     }
 }

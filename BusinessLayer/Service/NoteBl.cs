@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Interface;
 using CommonLayer.Model;
+using Microsoft.AspNetCore.Http;
 using RepoLayer.Entity;
 using RepoLayer.Interface;
 using RepoLayer.Services;
@@ -41,17 +42,26 @@ namespace BusinessLayer.Service
             return this.noteRl.IsTrash(userId, noteId);
         }
 
-        public bool IsArchive(long noteId)
+        public bool IsArchive(long userId, long noteId)
         {
-            return this.noteRl.IsArchive(noteId);
+            return this.noteRl.IsArchive(userId, noteId);
         }
         public bool DeleteNote(long userId, long noteId)
         {
             return this.noteRl.DeleteNote( userId,noteId);
         }
-        public NoteEntity Color(long noteId, String color)
+        public NoteEntity Color(long userId, long noteId, string color)
         {
-            return this.noteRl.Color(noteId, color);
+            return this.noteRl.Color(userId, noteId, color);
+        }
+        public DateTime Reminder(long userId, long noteId, DateTime reminder)
+        {
+            return this.noteRl.Reminder(userId, noteId, reminder);
+        }
+
+        public string UploadImage(long userId, long noteid, IFormFile image)
+        {
+            return this.noteRl.UploadImage(userId, noteid, image);
         }
 
     }

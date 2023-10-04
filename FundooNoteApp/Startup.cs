@@ -94,9 +94,9 @@ namespace FundooNoteApp
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "BookStore App",
+                    Title = "Fundoo App",
                     Version = "v1",
-                    Description = "API's for BookStore Application",
+                    Description = "API's for Fundoo Application",
                 });
                 var securitySchema = new OpenApiSecurityScheme
                 {
@@ -151,7 +151,7 @@ namespace FundooNoteApp
             // This middleware serves the Swagger documentation UI
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Employee API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Fundoo API V1");
             }); 
         }
     }

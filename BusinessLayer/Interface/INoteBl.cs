@@ -1,4 +1,5 @@
 ﻿using CommonLayer.Model;
+using Microsoft.AspNetCore.Http;
 using RepoLayer.Entity;
 using System;
 using System.Collections.Generic;
@@ -14,9 +15,13 @@ namespace BusinessLayer.Interface
         public bool IsPinorNot(long noteId, long userId);
 
         public bool IsTrash(long userId, long noteId);
-        public bool IsArchive(long noteId);
+        public bool IsArchive(long userId, long noteId);
         public bool DeleteNote(long userId, long noteId);
-        public NoteEntity Color(long noteId, String color);
+        public NoteEntity Color(long userId, long noteId, string color);
+        public DateTime Reminder(long userId, long noteId, DateTime reminder);
+        public string UploadImage(long userId, long noteid, IFormFile image);
+
+
 
 
 
