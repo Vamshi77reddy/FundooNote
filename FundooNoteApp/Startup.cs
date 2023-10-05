@@ -42,6 +42,13 @@ namespace FundooNoteApp
             services.AddTransient<UserInterfaceRl,UserRl>();
             services.AddTransient<INoteBl, NoteBl>();
             services.AddTransient<INoteRl,NoteRl >();
+            services.AddTransient<ILabelBl, LabelBl>();
+            services.AddTransient<ILabelRl, LabelRl >();
+            services.AddTransient<ICollabBl, CollabBl>();
+            services.AddTransient<ICollabRl, CollabRl>();
+            services.AddStackExchangeRedisCache(options => { options.Configuration = Configuration["RedisCacheUrl"]; });
+
+
 
 
             //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options => {

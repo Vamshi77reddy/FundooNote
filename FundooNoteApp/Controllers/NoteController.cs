@@ -1,15 +1,20 @@
 ﻿using BusinessLayer.Interface;
 using BusinessLayer.Service;
 using CommonLayer.Model;
+using GreenPipes.Caching;
 using MassTransit.Registration;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
 using RepoLayer.Context;
 using RepoLayer.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Text.Json;
+using System.Threading.Tasks;
 
 namespace FundooNoteApp.Controllers
 {
@@ -18,9 +23,13 @@ namespace FundooNoteApp.Controllers
     public class NoteController : Controller
     {
         private readonly INoteBl inoteBl;
-        public NoteController(INoteBl inoteBl)
+        private readonly FundooContext fundooContext;
+        private readonly IDistributedCache distributedCache;
+        public NoteController(INoteBl inoteBl, FundooContext fundooContext, IDistributedCache distributedCache)
         {
             this.inoteBl = inoteBl;
+            this.fundooContext = fundooContext;
+            this.distributedCache = distributedCache;
         }
         [HttpPost("TakeANote")]
         public IActionResult TakeANote(NotesModel notesModel)
@@ -211,5 +220,44 @@ namespace FundooNoteApp.Controllers
             }catch (Exception ex) { throw ex; }
         }
 
+        [HttpGet("GetAllNotesUsingRedisCache")]
+        public async Task<IActionResult> GetAllNotesUsingRedisCache()
+        {
+            try
+            {
+                var cacheKey = "NotesList";
+                List<NoteEntity> noteList;
+                // Trying to get data from the Redis cache
+                byte[] RedisNotesList = await distributedCache.GetAsync(cacheKey);
+                if (RedisNotesList != null)
+                {
+                    // If the data is found in the cache, encode and deserialize cached data.
+                    var cachedDataString = Encoding.UTF8.GetString(RedisNotesList);
+                    noteList = JsonSerializer.Deserialize<List<NoteEntity>>(cachedDataString);
+                }
+                else
+                {
+                    // If the data is not found in the cache, then fetch data from database
+                    long userId = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                    noteList = (List<NoteEntity>)inoteBl.GetAllNotes(userId);
+
+                    // Serializing the data
+                    string cachedDataString = JsonSerializer.Serialize(noteList);
+                    var dataToCache = Encoding.UTF8.GetBytes(cachedDataString);
+
+                    // Setting up the cache options
+                    DistributedCacheEntryOptions options = new DistributedCacheEntryOptions()
+                        .SetAbsoluteExpiration(DateTime.Now.AddMinutes(5))
+                        .SetSlidingExpiration(TimeSpan.FromMinutes(3));
+
+                    // Add the data into the cache
+                    await distributedCache.SetAsync(cacheKey, dataToCache, options);
+                }
+                return Ok(noteList);
+            }
+            catch (Exception ex) { throw ex; }
+        }
     }
+
 }
+

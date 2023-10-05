@@ -4,6 +4,7 @@ using RepoLayer.Entity;
 using RepoLayer.Interface;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace RepoLayer.Services
@@ -39,6 +40,93 @@ namespace RepoLayer.Services
             }
             catch (Exception ex) { throw ex; }
         }
+        public List<LabelEntity> GetLabelByNoteId(long userId, long noteId) {
+            try
+            {
+                List<LabelEntity> labelEntities = new List<LabelEntity>();
+                labelEntities = fundooContext.Label.Where(x => x.UserId == userId && x.NoteID == noteId).ToList();
+                if (labelEntities != null)
+                {
+                    return labelEntities;
+                }
+                else
+                {
+                    return null;
+                }
+            } catch (Exception ex) { throw ex; }
+
+        }
+        public List<LabelEntity> GetLabelByLabelId(long labelId, long noteId)
+        {
+            try
+            {
+                List<LabelEntity> labelEntities = new List<LabelEntity>();
+                labelEntities = fundooContext.Label.Where(x => x.LabelId == labelId && x.NoteID == noteId).ToList();
+                if (labelEntities != null)
+                {
+                    return labelEntities;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex) { throw ex; }
+
+        }
+
+
+        public List<LabelEntity> GetLabelByUserId( long userId)
+        {
+            try
+            {
+                List<LabelEntity> labelEntities = new List<LabelEntity>();
+                labelEntities = fundooContext.Label.Where(x => x.UserId == userId).ToList();
+                if (labelEntities != null)
+                {
+                    return labelEntities;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex) { throw ex; }
+
+        }
+        //public LabelEntity GetLabelByLabelName(long userId,string labelName)
+        //{
+        //    try
+        //    {
+        //        List<LabelEntity> labelEntities = new List<LabelEntity>();
+        //        labelEntities = fundooContext.Label.Where(x => x.UserId == userId).ToList();
+        //        if (labelEntities.LabelName == labelName)
+        //        {
+
+        //        }
+        //    }
+        //}
+
+
+
+        public bool DeleteLabel(long userId,int labelId)
+        {
+            try
+            {
+                LabelEntity labelEntity = fundooContext.Label.FirstOrDefault(x => x.UserId == userId && x.LabelId == labelId);
+                if(labelEntity != null)
+                {
+                    fundooContext.Remove(labelEntity);
+                    fundooContext.SaveChanges();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }catch(Exception ex) { throw ex; }  
+        }
+
 
     }
 }

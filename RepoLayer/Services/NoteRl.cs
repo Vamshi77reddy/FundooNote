@@ -58,7 +58,8 @@ namespace RepoLayer.Services
         {
             try
             {
-                List<NoteEntity> notes = fundooContext.NoteTable.Where(x=>x.UserId == userId).ToList();
+                // List<NoteEntity> notes = fundooContext.NoteTable.Where(x=>x.UserId == userId).ToList();
+              var notes=  fundooContext.NoteTable.Where(x => x.UserId == userId).ToList();
                 if (notes != null)
                 {
                     return notes;
@@ -96,7 +97,7 @@ namespace RepoLayer.Services
             }catch(Exception ex) { throw ex; }
 
         }
-        public bool IsPinorNot(long noteId,long userId)
+        public bool IsPinorNot(long noteId,long userId)  
         {
             NoteEntity noteEntity=fundooContext.NoteTable.Where(x=>x.NoteID== noteId&& x.UserId==userId).FirstOrDefault();
             if (noteEntity.IsPin == true)
@@ -113,7 +114,7 @@ namespace RepoLayer.Services
             }
         }
         public bool IsTrash(long userId, long noteId)
-        {
+        {  
             NoteEntity noteEntity = fundooContext.NoteTable.Where(x => x.NoteID == noteId&&x.UserId==userId).FirstOrDefault();
             if (noteEntity.IsTrash == true)
             {
@@ -207,7 +208,10 @@ namespace RepoLayer.Services
                 var result = fundooContext.NoteTable.Where(x => x.NoteID == noteid && x.UserId == userId).FirstOrDefault();
                 if(result != null)
                 {
-                    Account account = new Account();
+                    Account account = new Account(
+                        this.configuration["CloudinarySettings:CloudName"],
+                        this.configuration["CloudinarySettings:ApiKey"],
+                        this.configuration["CloudinarySettings:ApiSecret"]);
                     Cloudinary cloudinary = new Cloudinary(account);
                     var UploadParams = new ImageUploadParams()
                     {
@@ -227,7 +231,7 @@ namespace RepoLayer.Services
 
             }catch( Exception ex) { throw ex; }
         }
-
+        
 
     }
 }
