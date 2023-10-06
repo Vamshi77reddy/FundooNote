@@ -135,8 +135,8 @@ namespace RepoLayer.Services
 
 
 
-                public ForgetPasswordModel UserForgetPassword(ForgetPasswordModel forgetPasswordModel)
-        {
+       public ForgetPasswordModel UserForgetPassword(ForgetPasswordModel forgetPasswordModel)
+            {
             try
             {
 
@@ -174,5 +174,23 @@ namespace RepoLayer.Services
                 throw ex;
             }
         }
+        public UserEntity SessionLogin(string email,string password)
+        {
+            try
+            {
+                UserEntity user = this.fundooContext.UserTable.FirstOrDefault(x => x.EmailId == email);
+               var pass= Decrypt(user.Password);
+                if (pass == password && user != null)
+                {
+                    return user;
+                }
+                else
+                {
+                    return null;    
+                }
+            }catch (Exception ex) { throw ex; }
+        }
+        
+
+        }
     }
-}

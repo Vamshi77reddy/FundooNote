@@ -30,16 +30,38 @@ namespace RepoLayer.Services
             }catch (Exception ex) { throw ex; }
         }
 
-        public List<CollabEntity> GetAllCollaborations(long userId) 
-        { 
-        var result=fundooContext.Collab.Where(x=> x.UserId == userId).ToList();
-            if (result != null)
+        public List<CollabEntity> GetAllCollaborations(long userId)
+        {
+            try
             {
-                return result;
-            }
-            return null;
-
+                var result = fundooContext.Collab.Where(x => x.UserId == userId).ToList();
+                if (result != null)
+                {
+                    return result;
+                }
+                return null;
+            }catch(Exception ex) { throw ex; }  
         
         }
+
+        public CollabEntity DeleteCollab(long userId,long noteId,long collabId)
+        {
+            try
+            {
+
+                CollabEntity collabEntity = fundooContext.Collab.Where(x => x.UserId == userId && x.NoteID == noteId).FirstOrDefault();
+                if (collabEntity != null)
+                {
+                    fundooContext.Remove(collabEntity);
+                    fundooContext.SaveChanges();
+                    return collabEntity;
+                }
+                else
+                {
+                    return null;
+                }
+            }catch (Exception ex) { throw ex; }
+        }
+
     }
 }

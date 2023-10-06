@@ -53,5 +53,22 @@ namespace FundooNoteApp.Controllers
 
             }
         }
+
+        [HttpDelete("DeleteCollaboration")]
+        public IActionResult DeleteCollab(long noteId,long collabId)
+        {
+            long userId=Convert.ToInt32(User.Claims.FirstOrDefault(x=>x.Type =="UserId").Value);
+            var result=collabBl.DeleteCollab(userId,noteId,collabId);
+            if(result!=null)
+            {
+                return Ok(new ResponseModel<CollabEntity> { Status = true, Message = "CollabEmail Deleted Successfully", Data = result });
+
+            }
+            else
+            {
+                return BadRequest(new ResponseModel<CollabEntity> { Status = false, Message = "CollabEmail Deleted UnSuccessfully", Data = result });
+
+            }
+        }
     }
 }

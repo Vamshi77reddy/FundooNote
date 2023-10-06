@@ -143,6 +143,28 @@ namespace FundooNoteApp.Controllers
             }
         }
 
+        [HttpPost("SessionLogin")]
+
+        public IActionResult SessionLogin(string email, string password)
+        {
+            try
+            {
+                var result = userBl.SessionLogin(email, password);
+                if(result != null)
+                {
+                    HttpContext.Session.SetString("email", result.EmailId);
+                    HttpContext.Session.SetString("password", result.Password);
+                    return Ok(new ResponseModel<UserEntity> { Status = true, Message = "Login Successful", Data = result });
+
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<UserEntity> { Status = true, Message = "Login Successful", Data = result });
+
+                }
+            }catch (Exception ex) { throw ex; }
+        }
+
     }
 }
 

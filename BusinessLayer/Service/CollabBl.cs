@@ -22,6 +22,10 @@ namespace BusinessLayer.Service
         {
             return this.collabRl.GetAllCollaborations(userId);
         }
+        public CollabEntity DeleteCollab(long userId, long noteId, long collabId)
+        {
+            return this.collabRl.DeleteCollab(userId, noteId, collabId);
+        }
 
     }
 }

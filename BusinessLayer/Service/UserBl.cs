@@ -60,6 +60,14 @@ namespace BusinessLayer.Service
             return userinterfaceRl.ResetPassword(email, resetPasswordModel);
             }catch (Exception ex) { throw ex; }
         }
+        public UserEntity SessionLogin(string email, string password)
+        {
+            try
+            {
+                return userinterfaceRl.SessionLogin(email, password);
+            }catch(Exception ex) { throw ex; }
+        }
+
 
     }
 }
