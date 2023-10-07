@@ -95,5 +95,20 @@ namespace FundooNoteApp.Controllers
             }
 
         }
+        [HttpGet("GetLabelByName")]
+        public IActionResult GetLabelByName(string labelName)
+        {
+        long userId=Convert.ToInt32(User.Claims.FirstOrDefault(x=>x.Type == "UserId").Value);
+            var result = ilabelBl.GetLabelByLabelName(userId, labelName);
+            if(result!=null)
+            {
+                return Ok(new ResponseModel<LabelEntity> { Status = true, Message = "Displaying Label", Data = result });
+
+            }else
+            {
+                return BadRequest(new ResponseModel<LabelEntity> { Status = false, Message = "No Label Found", Data = result });
+
+            }
+        }
     }
 }

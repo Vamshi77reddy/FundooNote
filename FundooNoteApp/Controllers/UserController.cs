@@ -22,11 +22,13 @@ namespace FundooNoteApp.Controllers
         private readonly IConfiguration _configuration;
         private readonly IuserBl userBl;
         private readonly IBus bus;
+        private readonly ILogger<UserController> logger;
 
-        public UserController(IuserBl userBl,IBus bus)
+        public UserController(IuserBl userBl,IBus bus, ILogger<UserController> logger)
         {
             this.userBl = userBl;
             this.bus = bus;
+            this.logger = logger;
         }
 
         [HttpPost("Register")]
@@ -38,15 +40,20 @@ namespace FundooNoteApp.Controllers
                 var result = userBl.UserRegistrations(registration);
                 if (result != null)
                 {
+                    logger.LogInformation("UserRegistration Successful");
                     return Ok(new ResponseModel<UserEntity> { Status = true, Message = "UserRegistration Successful", Data = result });
                 }
                 else
                 {
+                    logger.LogError("UserRegistration Failed");
+
                     return BadRequest(new ResponseModel<UserEntity> { Status = false, Message = "UserRegistration Failed" });
                 }
 
             }
-            catch(Exception ex) { throw ex; }
+            catch(Exception ex) {
+                logger.LogCritical("Exception"); 
+                throw ex; }
         }
 
         [HttpPost("Login")]
@@ -58,10 +65,14 @@ namespace FundooNoteApp.Controllers
                 var result = userBl.Login(loginModel);
                 if (result != null)
                 {
+                    logger.LogInformation("Login Successful");
+
                     return Ok(new ResponseModel<string> { Status = true, Message = "Login Successful", Data = result });
                 }
                 else
                 {
+                    logger.LogError("Login Unsuccessful");
+       
                     return BadRequest(new ResponseModel<string> { Status = false, Message = "Login Failed" });                                                                            
                 }
 
@@ -123,10 +134,12 @@ namespace FundooNoteApp.Controllers
         {
             try
              {
-                // string email = User.FindFirst("EmailId").Value;
+               // string email = User.FindFirst("EmailId").Value;
 
 
                 var email = User.FindFirst("Email").Value;
+               //var email= HttpContext.Session.GetString("Email");
+
                 var result = userBl.ResetPassword(email, resetPasswordModel);
                 if (result != null)
                 {
@@ -154,9 +167,10 @@ namespace FundooNoteApp.Controllers
                 {
                     HttpContext.Session.SetString("email", result.EmailId);
                     HttpContext.Session.SetString("password", result.Password);
+                
                     return Ok(new ResponseModel<UserEntity> { Status = true, Message = "Login Successful", Data = result });
 
-                }
+                } 
                 else
                 {
                     return BadRequest(new ResponseModel<UserEntity> { Status = true, Message = "Login Successful", Data = result });

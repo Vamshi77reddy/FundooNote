@@ -35,6 +35,12 @@ namespace BusinessLayer.Service
         {
             return this.ilabelRl.GetLabelByLabelId(labelId, noteId);
         }
+        public LabelEntity GetLabelByLabelName(long userId, string labelName)
+        {
+            return this.ilabelRl.GetLabelByLabelName(userId, labelName);
+        }
+
+
 
     }
 }

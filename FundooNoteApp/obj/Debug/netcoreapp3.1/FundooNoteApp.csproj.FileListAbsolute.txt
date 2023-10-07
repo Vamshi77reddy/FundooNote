@@ -102,3 +102,11 @@ C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.
 C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\NLog.config
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\Serilog.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp\bin\Debug\netcoreapp3.1\Serilog.Settings.Configuration.dll

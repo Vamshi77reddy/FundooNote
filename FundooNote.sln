@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLayer", "CommonLayer\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepoLayer", "RepoLayer\RepoLayer.csproj", "{24B00A38-F710-4BAF-B8C5-8D03CF551E16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundooNoteApp", "FundooNoteApp\FundooNoteApp.csproj", "{E548A268-0FC1-40E1-9FDB-C665F59347D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FundooNoteApp", "FundooNoteApp\FundooNoteApp.csproj", "{E548A268-0FC1-40E1-9FDB-C665F59347D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{06F1DEEA-65D9-4512-A804-5B5E2311C925}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

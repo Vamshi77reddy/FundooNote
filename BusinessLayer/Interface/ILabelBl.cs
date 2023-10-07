@@ -13,6 +13,9 @@ namespace BusinessLayer.Interface
         public List<LabelEntity> GetLabelByUserId(long userId);
         public bool DeleteLabel(long userId, int labelId);
         public List<LabelEntity> GetLabelByLabelId(long labelId, long noteId);
+        public LabelEntity GetLabelByLabelName(long userId, string labelName);
+
+
 
 
 

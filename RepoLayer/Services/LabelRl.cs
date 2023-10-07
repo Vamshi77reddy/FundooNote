@@ -94,19 +94,23 @@ namespace RepoLayer.Services
             catch (Exception ex) { throw ex; }
 
         }
-        //public LabelEntity GetLabelByLabelName(long userId,string labelName)
-        //{
-        //    try
-        //    {
-        //        List<LabelEntity> labelEntities = new List<LabelEntity>();
-        //        labelEntities = fundooContext.Label.Where(x => x.UserId == userId).ToList();
-        //        if (labelEntities.LabelName == labelName)
-        //        {
+        public LabelEntity GetLabelByLabelName(long userId, string labelName)
+        {
+            try
+            {
+                List<LabelEntity> labelEntities = fundooContext.Label
+                    .Where(x => x.UserId == userId)
+                    .ToList();
 
-        //        }
-        //    }
-        //}
+                LabelEntity label = labelEntities.FirstOrDefault(x => x.LabelName == labelName);
 
+                return label;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
 
         public bool DeleteLabel(long userId,int labelId)
