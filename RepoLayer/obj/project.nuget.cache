@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5OOXN4P+kyMAixXFnPS+YGLdoaPdZ+1o0HL/nanJhdpnjNY0uiyf/D38iMPN/36uncyBVzCN3ASWVzx/1qEoMQ==",
+  "dgSpecHash": "2qoHxtdTCmNiQ+vkWmgKq1Ipgp3G1MNxYDgzuO6fdDtsS/3JcGwbQHHrKVqwJVuni9dregzpMBTGw0R3WVV5ZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Teju Reddy\\source\\repos\\FundooNote\\RepoLayer\\RepoLayer.csproj",
   "expectedPackageFiles": [
@@ -103,6 +103,7 @@
     "C:\\Users\\Teju Reddy\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Teju Reddy\\.nuget\\packages\\serilog\\2.6.0\\serilog.2.6.0.nupkg.sha512",
     "C:\\Users\\Teju Reddy\\.nuget\\packages\\serilog.settings.configuration\\3.0.1\\serilog.settings.configuration.3.0.1.nupkg.sha512",
+    "C:\\Users\\Teju Reddy\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
     "C:\\Users\\Teju Reddy\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\Teju Reddy\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\Teju Reddy\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

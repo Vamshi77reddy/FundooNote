@@ -1,10 +1,15 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿// <copyright file="20230930070712_Note.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace RepoLayer.Migrations
 {
+    using System;
+    using Microsoft.EntityFrameworkCore.Migrations;
+
     public partial class Note : Migration
     {
+        /// <inheritdoc/>
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -22,7 +27,7 @@ namespace RepoLayer.Migrations
                     IsPin = table.Column<bool>(nullable: false),
                     IsTrash = table.Column<bool>(nullable: false),
                     Createat = table.Column<DateTime>(nullable: false),
-                    Modifiedat = table.Column<DateTime>(nullable: false)
+                    Modifiedat = table.Column<DateTime>(nullable: false),
                 },
                 constraints: table =>
                 {
@@ -30,6 +35,7 @@ namespace RepoLayer.Migrations
                 });
         }
 
+        /// <inheritdoc/>
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

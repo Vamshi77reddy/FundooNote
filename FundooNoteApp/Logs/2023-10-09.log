@@ -1,0 +1,615 @@
+2023-10-09 12:32:11.4055 DEBUG The application Started
+2023-10-09 12:32:13.3994 DEBUG Hosting starting
+2023-10-09 12:32:13.4885 INFO User profile is available. Using 'C:\Users\Teju Reddy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-09 12:32:14.0256 DEBUG Reading data from file 'C:\Users\Teju Reddy\AppData\Local\ASP.NET\DataProtection-Keys\key-2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c.xml'.
+2023-10-09 12:32:14.0541 DEBUG Found key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c}.
+2023-10-09 12:32:14.0697 DEBUG Considering key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with expiration date 2023-11-27 07:29:19Z as default key.
+2023-10-09 12:32:14.1178 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-09 12:32:14.1178 DEBUG Decrypting secret element using Windows DPAPI.
+2023-10-09 12:32:14.1178 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-09 12:32:14.1337 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-10-09 12:32:14.1337 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-10-09 12:32:14.1337 DEBUG Using key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} as the default key.
+2023-10-09 12:32:14.1337 DEBUG Key ring with default key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} was loaded during application startup.
+2023-10-09 12:32:14.1473 DEBUG Starting host: rabbitmq://localhost/
+2023-10-09 12:32:14.2229 DEBUG Connect: guest@localhost:5672/
+2023-10-09 12:32:14.5160 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 49570)
+2023-10-09 12:32:14.7184 DEBUG Loaded hosting startup assembly FundooNoteApp
+2023-10-09 12:32:14.7184 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-10-09 12:32:14.7184 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-10-09 12:32:14.7184 INFO Application started. Press Ctrl+C to shut down.
+2023-10-09 12:32:14.7184 INFO Hosting environment: Development
+2023-10-09 12:32:14.7184 INFO Content root path: C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp
+2023-10-09 12:32:14.7184 DEBUG Hosting started
+2023-10-09 12:32:14.7737 INFO Request starting HTTP/2.0 GET https://localhost:44353/Swagger/index.html  
+2023-10-09 12:32:14.8086 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2023-10-09 12:32:14.8086 TRACE All hosts are allowed.
+2023-10-09 12:32:14.8399 DEBUG No candidates found for the request path '/Swagger/index.html'
+2023-10-09 12:32:14.8399 DEBUG Request did not match any endpoints
+2023-10-09 12:32:14.8399 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 12:32:14.9247 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-09 12:32:14.9817 DEBUG Response markup is scheduled to include browser refresh script injection.
+2023-10-09 12:32:15.2853 INFO Request starting HTTP/2.0 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js  
+2023-10-09 12:32:15.2853 INFO Request starting HTTP/2.0 GET https://localhost:44353/_vs/browserLink  
+2023-10-09 12:32:15.2938 INFO Request finished in 6.755ms 200 application/javascript; charset=utf-8
+2023-10-09 12:32:15.5991 INFO Request finished in 312.6431ms 200 text/javascript; charset=UTF-8
+2023-10-09 12:32:25.0253 ERROR Error closing the session.
+2023-10-09 12:32:25.0253 DEBUG Response markup was updated to include browser refresh script injection.
+2023-10-09 12:32:25.0253 INFO Request finished in 10264.6302ms 200 text/html;charset=utf-8
+2023-10-09 12:32:25.0747 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/v1/swagger.json  
+2023-10-09 12:32:25.0747 TRACE All hosts are allowed.
+2023-10-09 12:32:25.0747 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-09 12:32:25.0747 DEBUG Request did not match any endpoints
+2023-10-09 12:32:25.0747 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 12:32:25.0747 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-09 12:32:29.3299 ERROR Error closing the session.
+2023-10-09 12:32:29.3299 INFO Request finished in 4256.2734ms 200 application/json;charset=utf-8
+2023-10-09 12:33:12.4264 INFO Request starting HTTP/2.0 POST https://localhost:44353/api/User/Login application/json 72
+2023-10-09 12:33:12.4264 TRACE All hosts are allowed.
+2023-10-09 12:33:12.4427 DEBUG 1 candidate(s) found for the request path '/api/User/Login'
+2023-10-09 12:33:12.4478 DEBUG Endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)' with route pattern 'api/User/Login' is valid for the request path '/api/User/Login'
+2023-10-09 12:33:12.4478 DEBUG Request matched endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)'
+2023-10-09 12:33:12.4478 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 12:33:12.4478 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-09 12:33:12.4478 INFO Executing endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)'
+2023-10-09 12:33:12.4650 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2023-10-09 12:33:12.5238 INFO Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(CommonLayer.Model.LoginModel) on controller FundooNoteApp.Controllers.UserController (FundooNoteApp).
+2023-10-09 12:33:12.5238 DEBUG Execution plan of authorization filters (in the following order): None
+2023-10-09 12:33:12.5238 DEBUG Execution plan of resource filters (in the following order): None
+2023-10-09 12:33:12.5238 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-10-09 12:33:12.5238 DEBUG Execution plan of exception filters (in the following order): None
+2023-10-09 12:33:12.5238 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-10-09 12:33:12.5238 DEBUG Executing controller factory for controller FundooNoteApp.Controllers.UserController (FundooNoteApp)
+2023-10-09 12:33:12.7004 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-10-09 12:33:12.7148 DEBUG Executed controller factory for controller FundooNoteApp.Controllers.UserController (FundooNoteApp)
+2023-10-09 12:33:12.7148 DEBUG Attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel' ...
+2023-10-09 12:33:12.7148 DEBUG Attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel' using the name '' in request data ...
+2023-10-09 12:33:12.7148 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-09 12:33:12.7148 DEBUG JSON input formatter succeeded, deserializing to type 'CommonLayer.Model.LoginModel'
+2023-10-09 12:33:12.7148 DEBUG Done attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel'.
+2023-10-09 12:33:12.7148 DEBUG Done attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel'.
+2023-10-09 12:33:12.7148 DEBUG Attempting to validate the bound parameter 'loginModel' of type 'CommonLayer.Model.LoginModel' ...
+2023-10-09 12:33:12.7329 DEBUG Done attempting to validate the bound parameter 'loginModel' of type 'CommonLayer.Model.LoginModel'.
+2023-10-09 12:33:12.7329 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:33:12.7329 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:33:12.7329 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:33:12.7329 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:33:12.7329 INFO Executing action method FundooNoteApp.Controllers.UserController.Login (FundooNoteApp) - Validation state: Valid
+2023-10-09 12:33:12.7329 TRACE Executing action method FundooNoteApp.Controllers.UserController.Login (FundooNoteApp) with arguments (CommonLayer.Model.LoginModel)
+2023-10-09 12:33:13.5151 INFO Entity Framework Core 3.1.0 initialized 'FundooContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-10-09 12:33:13.7539 DEBUG queryContext => new QueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserEntity>, 
+    RepoLayer.Context.FundooContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2023-10-09 12:33:13.7793 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-10-09 12:33:13.9700 DEBUG Created DbCommand for 'ExecuteReader' (184ms).
+2023-10-09 12:33:13.9841 DEBUG Opening connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:33:28.1634 ERROR An error occurred using the connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:33:28.2358 ERROR An exception occurred while iterating over the results of a query for context type 'RepoLayer.Context.FundooContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=43; handshake=33; [Login] initialization=3; authentication=9; [Post-Login] complete=14017; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:f6b83e68-6e3a-423e-b432-6070ed495230
+Error Number:-2,State:0,Class:11
+2023-10-09 12:34:38.6622 DEBUG The application Started
+2023-10-09 12:34:39.4930 DEBUG Hosting starting
+2023-10-09 12:34:39.5469 INFO User profile is available. Using 'C:\Users\Teju Reddy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-09 12:34:39.8074 DEBUG Reading data from file 'C:\Users\Teju Reddy\AppData\Local\ASP.NET\DataProtection-Keys\key-2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c.xml'.
+2023-10-09 12:34:39.8198 DEBUG Found key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c}.
+2023-10-09 12:34:39.8198 DEBUG Considering key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with expiration date 2023-11-27 07:29:19Z as default key.
+2023-10-09 12:34:39.8755 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-09 12:34:39.8851 DEBUG Decrypting secret element using Windows DPAPI.
+2023-10-09 12:34:39.8851 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-09 12:34:39.8851 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-10-09 12:34:39.8851 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-10-09 12:34:39.8851 DEBUG Using key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} as the default key.
+2023-10-09 12:34:39.8970 DEBUG Key ring with default key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} was loaded during application startup.
+2023-10-09 12:34:39.8970 DEBUG Starting host: rabbitmq://localhost/
+2023-10-09 12:34:39.9487 DEBUG Connect: guest@localhost:5672/
+2023-10-09 12:34:40.4130 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 49700)
+2023-10-09 12:34:40.6206 DEBUG Loaded hosting startup assembly FundooNoteApp
+2023-10-09 12:34:40.6206 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-10-09 12:34:40.6206 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-10-09 12:34:40.6206 INFO Application started. Press Ctrl+C to shut down.
+2023-10-09 12:34:40.6206 INFO Hosting environment: Development
+2023-10-09 12:34:40.6206 INFO Content root path: C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp
+2023-10-09 12:34:40.6206 DEBUG Hosting started
+2023-10-09 12:34:40.6608 INFO Request starting HTTP/2.0 GET https://localhost:44353/Swagger/index.html  
+2023-10-09 12:34:40.7009 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2023-10-09 12:34:40.7009 TRACE All hosts are allowed.
+2023-10-09 12:34:40.7520 DEBUG No candidates found for the request path '/Swagger/index.html'
+2023-10-09 12:34:40.7520 DEBUG Request did not match any endpoints
+2023-10-09 12:34:40.7584 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 12:34:40.8726 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-09 12:34:40.9289 DEBUG Response markup is scheduled to include browser refresh script injection.
+2023-10-09 12:34:41.0761 INFO Request starting HTTP/2.0 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js  
+2023-10-09 12:34:41.0761 INFO Request starting HTTP/2.0 GET https://localhost:44353/_vs/browserLink  
+2023-10-09 12:34:41.0963 INFO Request finished in 19.413ms 200 application/javascript; charset=utf-8
+2023-10-09 12:34:41.1450 INFO Request finished in 64.1881ms 200 text/javascript; charset=UTF-8
+2023-10-09 12:34:45.4289 ERROR Error closing the session.
+2023-10-09 12:34:45.4289 DEBUG Response markup was updated to include browser refresh script injection.
+2023-10-09 12:34:45.4363 INFO Request finished in 4777.2318ms 200 text/html;charset=utf-8
+2023-10-09 12:34:45.4860 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/v1/swagger.json  
+2023-10-09 12:34:45.4860 TRACE All hosts are allowed.
+2023-10-09 12:34:45.4860 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-09 12:34:45.4860 DEBUG Request did not match any endpoints
+2023-10-09 12:34:45.4860 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 12:34:45.4860 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-09 12:34:54.8049 ERROR Error closing the session.
+2023-10-09 12:34:54.8049 INFO Request finished in 9320.1264ms 200 application/json;charset=utf-8
+2023-10-09 12:35:19.1128 INFO Request starting HTTP/2.0 POST https://localhost:44353/api/User/Login application/json 72
+2023-10-09 12:35:19.1128 TRACE All hosts are allowed.
+2023-10-09 12:35:19.1318 DEBUG 1 candidate(s) found for the request path '/api/User/Login'
+2023-10-09 12:35:19.1343 DEBUG Endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)' with route pattern 'api/User/Login' is valid for the request path '/api/User/Login'
+2023-10-09 12:35:19.1343 DEBUG Request matched endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)'
+2023-10-09 12:35:19.1343 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 12:35:19.1343 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-09 12:35:19.1343 INFO Executing endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)'
+2023-10-09 12:35:19.1343 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2023-10-09 12:35:19.1970 INFO Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(CommonLayer.Model.LoginModel) on controller FundooNoteApp.Controllers.UserController (FundooNoteApp).
+2023-10-09 12:35:19.1970 DEBUG Execution plan of authorization filters (in the following order): None
+2023-10-09 12:35:19.1970 DEBUG Execution plan of resource filters (in the following order): None
+2023-10-09 12:35:19.1970 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-10-09 12:35:19.1970 DEBUG Execution plan of exception filters (in the following order): None
+2023-10-09 12:35:19.1970 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-10-09 12:35:19.1970 DEBUG Executing controller factory for controller FundooNoteApp.Controllers.UserController (FundooNoteApp)
+2023-10-09 12:35:19.3383 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-10-09 12:35:19.3734 DEBUG Executed controller factory for controller FundooNoteApp.Controllers.UserController (FundooNoteApp)
+2023-10-09 12:35:19.3734 DEBUG Attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel' ...
+2023-10-09 12:35:19.3853 DEBUG Attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel' using the name '' in request data ...
+2023-10-09 12:35:19.3853 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-09 12:35:19.3853 DEBUG JSON input formatter succeeded, deserializing to type 'CommonLayer.Model.LoginModel'
+2023-10-09 12:35:19.3853 DEBUG Done attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel'.
+2023-10-09 12:35:19.3853 DEBUG Done attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel'.
+2023-10-09 12:35:19.3853 DEBUG Attempting to validate the bound parameter 'loginModel' of type 'CommonLayer.Model.LoginModel' ...
+2023-10-09 12:35:19.4070 DEBUG Done attempting to validate the bound parameter 'loginModel' of type 'CommonLayer.Model.LoginModel'.
+2023-10-09 12:35:19.4070 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:35:19.4070 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:35:19.4070 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:35:19.4070 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:35:19.4070 INFO Executing action method FundooNoteApp.Controllers.UserController.Login (FundooNoteApp) - Validation state: Valid
+2023-10-09 12:35:19.4070 TRACE Executing action method FundooNoteApp.Controllers.UserController.Login (FundooNoteApp) with arguments (CommonLayer.Model.LoginModel)
+2023-10-09 12:35:20.0491 INFO Entity Framework Core 3.1.0 initialized 'FundooContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-10-09 12:35:20.2525 DEBUG queryContext => new QueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserEntity>, 
+    RepoLayer.Context.FundooContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2023-10-09 12:35:20.2762 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-10-09 12:35:20.4833 DEBUG Created DbCommand for 'ExecuteReader' (202ms).
+2023-10-09 12:35:20.4833 DEBUG Opening connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:35:34.6925 ERROR An error occurred using the connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:35:34.7554 ERROR An exception occurred while iterating over the results of a query for context type 'RepoLayer.Context.FundooContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=60; handshake=31; [Login] initialization=3; authentication=8; [Post-Login] complete=14022; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:4311033f-1a7e-4245-b379-8e3f3cce4c5a
+Error Number:-2,State:0,Class:11
+2023-10-09 12:36:01.6573 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:36:01.6573 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:36:01.6573 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:36:01.6573 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:36:01.6630 INFO Executed action FundooNoteApp.Controllers.UserController.Login (FundooNoteApp) in 42461.9408ms
+2023-10-09 12:36:01.6630 INFO Executed endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)'
+2023-10-09 12:36:05.7762 ERROR Error closing the session.
+2023-10-09 12:36:05.7762 ERROR An unhandled exception has occurred while executing the request.
+2023-10-09 12:36:05.8160 DEBUG 'FundooContext' disposed.
+2023-10-09 12:36:05.8206 INFO Request finished in 46713.1402ms 500 text/plain
+2023-10-09 12:36:09.7040 INFO Request starting HTTP/2.0 POST https://localhost:44353/api/User/Login application/json 72
+2023-10-09 12:36:09.7040 TRACE All hosts are allowed.
+2023-10-09 12:36:09.7040 DEBUG 1 candidate(s) found for the request path '/api/User/Login'
+2023-10-09 12:36:09.7040 DEBUG Endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)' with route pattern 'api/User/Login' is valid for the request path '/api/User/Login'
+2023-10-09 12:36:09.7105 DEBUG Request matched endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)'
+2023-10-09 12:36:09.7105 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 12:36:09.7105 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-09 12:36:09.7105 INFO Executing endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)'
+2023-10-09 12:36:09.7105 INFO Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(CommonLayer.Model.LoginModel) on controller FundooNoteApp.Controllers.UserController (FundooNoteApp).
+2023-10-09 12:36:09.7105 DEBUG Execution plan of authorization filters (in the following order): None
+2023-10-09 12:36:09.7105 DEBUG Execution plan of resource filters (in the following order): None
+2023-10-09 12:36:09.7105 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-10-09 12:36:09.7105 DEBUG Execution plan of exception filters (in the following order): None
+2023-10-09 12:36:09.7105 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-10-09 12:36:09.7105 DEBUG Executing controller factory for controller FundooNoteApp.Controllers.UserController (FundooNoteApp)
+2023-10-09 12:36:09.7105 DEBUG Executed controller factory for controller FundooNoteApp.Controllers.UserController (FundooNoteApp)
+2023-10-09 12:36:09.7105 DEBUG Attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel' ...
+2023-10-09 12:36:09.7105 DEBUG Attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel' using the name '' in request data ...
+2023-10-09 12:36:09.7105 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-09 12:36:09.7105 DEBUG JSON input formatter succeeded, deserializing to type 'CommonLayer.Model.LoginModel'
+2023-10-09 12:36:09.7105 DEBUG Done attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel'.
+2023-10-09 12:36:09.7105 DEBUG Done attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel'.
+2023-10-09 12:36:09.7105 DEBUG Attempting to validate the bound parameter 'loginModel' of type 'CommonLayer.Model.LoginModel' ...
+2023-10-09 12:36:09.7105 DEBUG Done attempting to validate the bound parameter 'loginModel' of type 'CommonLayer.Model.LoginModel'.
+2023-10-09 12:36:09.7105 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:36:09.7105 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:36:09.7105 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:36:09.7105 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:36:09.7105 INFO Executing action method FundooNoteApp.Controllers.UserController.Login (FundooNoteApp) - Validation state: Valid
+2023-10-09 12:36:09.7105 TRACE Executing action method FundooNoteApp.Controllers.UserController.Login (FundooNoteApp) with arguments (CommonLayer.Model.LoginModel)
+2023-10-09 12:36:09.7513 INFO Entity Framework Core 3.1.0 initialized 'FundooContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-10-09 12:36:09.7513 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-10-09 12:36:09.7513 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-09 12:36:09.7513 DEBUG Opening connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:36:09.8313 DEBUG Opened connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:36:09.8475 DEBUG Executing DbCommand [Parameters=[@__loginModel_EmailId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[EmailId], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[EmailId] = @__loginModel_EmailId_0
+2023-10-09 12:36:09.9092 INFO Executed DbCommand (72ms) [Parameters=[@__loginModel_EmailId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[EmailId], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[EmailId] = @__loginModel_EmailId_0
+2023-10-09 12:36:09.9545 DEBUG Context 'FundooContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-09 12:36:09.9814 DEBUG A data reader was disposed.
+2023-10-09 12:36:09.9814 DEBUG Closing connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:36:09.9814 DEBUG Closed connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:36:10.1564 INFO Login Successful
+2023-10-09 12:36:10.1609 INFO Executed action method FundooNoteApp.Controllers.UserController.Login (FundooNoteApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 436.969ms.
+2023-10-09 12:36:10.1609 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:36:10.1609 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:36:10.1609 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:36:10.1609 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:36:10.1609 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 12:36:10.1609 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 12:36:10.1609 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-10-09 12:36:10.1609 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-10-09 12:36:10.1609 DEBUG No information found on request to perform content negotiation.
+2023-10-09 12:36:10.1609 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-09 12:36:10.1609 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-09 12:36:10.1609 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-09 12:36:10.1609 INFO Executing ObjectResult, writing value of type 'CommonLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-09 12:36:10.1609 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-10-09 12:36:10.1609 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 12:36:10.1609 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 12:36:10.1609 INFO Executed action FundooNoteApp.Controllers.UserController.Login (FundooNoteApp) in 453.1111ms
+2023-10-09 12:36:10.1609 INFO Executed endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)'
+2023-10-09 12:36:19.3115 ERROR Error closing the session.
+2023-10-09 12:36:19.3115 DEBUG 'FundooContext' disposed.
+2023-10-09 12:36:19.3115 INFO Request finished in 9610.3168ms 200 application/json; charset=utf-8
+2023-10-09 12:36:52.8245 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/Collab/GetAllCollaborations  
+2023-10-09 12:36:52.8245 TRACE All hosts are allowed.
+2023-10-09 12:36:52.8245 DEBUG 1 candidate(s) found for the request path '/api/Collab/GetAllCollaborations'
+2023-10-09 12:36:52.8245 DEBUG Endpoint 'FundooNoteApp.Controllers.CollabController.GetAllCollaborations (FundooNoteApp)' with route pattern 'api/Collab/GetAllCollaborations' is valid for the request path '/api/Collab/GetAllCollaborations'
+2023-10-09 12:36:52.8371 DEBUG Request matched endpoint 'FundooNoteApp.Controllers.CollabController.GetAllCollaborations (FundooNoteApp)'
+2023-10-09 12:36:52.8371 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 12:36:52.9044 INFO Successfully validated the token.
+2023-10-09 12:36:52.9044 DEBUG AuthenticationScheme: Bearer was successfully authenticated.
+2023-10-09 12:36:52.9044 INFO Executing endpoint 'FundooNoteApp.Controllers.CollabController.GetAllCollaborations (FundooNoteApp)'
+2023-10-09 12:36:52.9044 INFO Route matched with {action = "GetAllCollaborations", controller = "Collab"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCollaborations() on controller FundooNoteApp.Controllers.CollabController (FundooNoteApp).
+2023-10-09 12:36:52.9044 DEBUG Execution plan of authorization filters (in the following order): None
+2023-10-09 12:36:52.9044 DEBUG Execution plan of resource filters (in the following order): None
+2023-10-09 12:36:52.9044 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-10-09 12:36:52.9044 DEBUG Execution plan of exception filters (in the following order): None
+2023-10-09 12:36:52.9044 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-10-09 12:36:52.9044 DEBUG Executing controller factory for controller FundooNoteApp.Controllers.CollabController (FundooNoteApp)
+2023-10-09 12:36:52.9044 DEBUG Executed controller factory for controller FundooNoteApp.Controllers.CollabController (FundooNoteApp)
+2023-10-09 12:36:52.9044 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:36:52.9044 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:36:52.9044 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:36:52.9044 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:36:52.9044 INFO Executing action method FundooNoteApp.Controllers.CollabController.GetAllCollaborations (FundooNoteApp) - Validation state: Valid
+2023-10-09 12:36:56.1389 INFO Entity Framework Core 3.1.0 initialized 'FundooContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-10-09 12:36:56.1521 DEBUG queryContext => new QueryingEnumerable<CollabEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, CollabEntity>, 
+    RepoLayer.Context.FundooContext, 
+    DiagnosticsLogger<Query>
+)
+2023-10-09 12:36:56.1521 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-10-09 12:36:56.1521 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-09 12:36:56.1521 DEBUG Opening connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:36:56.1521 DEBUG Opened connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:36:56.1521 DEBUG Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CollabId], [c].[CollabEmail], [c].[ModifiedAt], [c].[NoteID], [c].[UserId]
+FROM [Collab] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2023-10-09 12:36:56.1644 INFO Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CollabId], [c].[CollabEmail], [c].[ModifiedAt], [c].[NoteID], [c].[UserId]
+FROM [Collab] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2023-10-09 12:36:56.1644 DEBUG Context 'FundooContext' started tracking 'CollabEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-09 12:36:56.1790 DEBUG A data reader was disposed.
+2023-10-09 12:36:56.1790 DEBUG Closing connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:36:56.1790 DEBUG Closed connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:36:56.1790 INFO Executed action method FundooNoteApp.Controllers.CollabController.GetAllCollaborations (FundooNoteApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3267.6645ms.
+2023-10-09 12:36:56.1790 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:36:56.1790 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:36:56.1790 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:36:56.1790 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:36:56.1790 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 12:36:56.1790 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 12:36:56.1790 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-10-09 12:36:56.1790 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-10-09 12:36:56.1790 DEBUG No information found on request to perform content negotiation.
+2023-10-09 12:36:56.1790 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-09 12:36:56.1790 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-09 12:36:56.1790 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-09 12:36:56.1790 INFO Executing ObjectResult, writing value of type 'CommonLayer.Model.ResponseModel`1[[System.Collections.Generic.List`1[[RepoLayer.Entity.CollabEntity, RepoLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-09 12:36:56.1790 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-10-09 12:36:56.1790 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 12:36:56.1790 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 12:36:56.1790 INFO Executed action FundooNoteApp.Controllers.CollabController.GetAllCollaborations (FundooNoteApp) in 3281.3192ms
+2023-10-09 12:36:56.1790 INFO Executed endpoint 'FundooNoteApp.Controllers.CollabController.GetAllCollaborations (FundooNoteApp)'
+2023-10-09 12:37:00.3432 ERROR Error closing the session.
+2023-10-09 12:37:00.3432 DEBUG 'FundooContext' disposed.
+2023-10-09 12:37:00.3432 INFO Request finished in 7519.5831ms 200 application/json; charset=utf-8
+2023-10-09 12:38:10.3643 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/Note/GetAllNotesUsingRedisCache  
+2023-10-09 12:38:10.3695 TRACE All hosts are allowed.
+2023-10-09 12:38:10.3695 DEBUG 1 candidate(s) found for the request path '/api/Note/GetAllNotesUsingRedisCache'
+2023-10-09 12:38:10.3695 DEBUG Endpoint 'FundooNoteApp.Controllers.NoteController.GetAllNotesUsingRedisCache (FundooNoteApp)' with route pattern 'api/Note/GetAllNotesUsingRedisCache' is valid for the request path '/api/Note/GetAllNotesUsingRedisCache'
+2023-10-09 12:38:10.3695 DEBUG Request matched endpoint 'FundooNoteApp.Controllers.NoteController.GetAllNotesUsingRedisCache (FundooNoteApp)'
+2023-10-09 12:38:10.3695 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 12:38:10.3695 INFO Successfully validated the token.
+2023-10-09 12:38:10.3695 DEBUG AuthenticationScheme: Bearer was successfully authenticated.
+2023-10-09 12:38:10.3695 INFO Executing endpoint 'FundooNoteApp.Controllers.NoteController.GetAllNotesUsingRedisCache (FundooNoteApp)'
+2023-10-09 12:38:10.3898 INFO Route matched with {action = "GetAllNotesUsingRedisCache", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotesUsingRedisCache() on controller FundooNoteApp.Controllers.NoteController (FundooNoteApp).
+2023-10-09 12:38:10.3898 DEBUG Execution plan of authorization filters (in the following order): None
+2023-10-09 12:38:10.3898 DEBUG Execution plan of resource filters (in the following order): None
+2023-10-09 12:38:10.3898 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-10-09 12:38:10.3898 DEBUG Execution plan of exception filters (in the following order): None
+2023-10-09 12:38:10.3898 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-10-09 12:38:10.3898 DEBUG Executing controller factory for controller FundooNoteApp.Controllers.NoteController (FundooNoteApp)
+2023-10-09 12:38:10.3898 DEBUG Executed controller factory for controller FundooNoteApp.Controllers.NoteController (FundooNoteApp)
+2023-10-09 12:38:10.3898 TRACE Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.
+2023-10-09 12:38:10.3898 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:38:10.3898 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:38:10.3898 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:38:10.3898 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:38:10.3898 INFO Executing action method FundooNoteApp.Controllers.NoteController.GetAllNotesUsingRedisCache (FundooNoteApp) - Validation state: Valid
+2023-10-09 12:38:14.5996 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:38:14.5996 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:38:14.5996 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:38:14.5996 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:38:14.5996 TRACE Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.
+2023-10-09 12:38:14.5996 INFO Executed action FundooNoteApp.Controllers.NoteController.GetAllNotesUsingRedisCache (FundooNoteApp) in 4211.8982ms
+2023-10-09 12:38:14.5996 INFO Executed endpoint 'FundooNoteApp.Controllers.NoteController.GetAllNotesUsingRedisCache (FundooNoteApp)'
+2023-10-09 12:38:23.7480 ERROR Error closing the session.
+2023-10-09 12:38:23.7480 ERROR An unhandled exception has occurred while executing the request.
+2023-10-09 12:38:23.7480 INFO Request finished in 13391.467ms 500 text/plain
+2023-10-09 12:41:06.9997 INFO Request starting HTTP/2.0 GET https://localhost:44353/api/Note/Get-All-Notes  
+2023-10-09 12:41:06.9997 TRACE All hosts are allowed.
+2023-10-09 12:41:06.9997 DEBUG 1 candidate(s) found for the request path '/api/Note/Get-All-Notes'
+2023-10-09 12:41:06.9997 DEBUG Endpoint 'FundooNoteApp.Controllers.NoteController.GetAllNote (FundooNoteApp)' with route pattern 'api/Note/Get-All-Notes' is valid for the request path '/api/Note/Get-All-Notes'
+2023-10-09 12:41:06.9997 DEBUG Request matched endpoint 'FundooNoteApp.Controllers.NoteController.GetAllNote (FundooNoteApp)'
+2023-10-09 12:41:06.9997 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 12:41:06.9997 INFO Successfully validated the token.
+2023-10-09 12:41:06.9997 DEBUG AuthenticationScheme: Bearer was successfully authenticated.
+2023-10-09 12:41:06.9997 INFO Executing endpoint 'FundooNoteApp.Controllers.NoteController.GetAllNote (FundooNoteApp)'
+2023-10-09 12:41:07.0145 INFO Route matched with {action = "GetAllNote", controller = "Note"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllNote() on controller FundooNoteApp.Controllers.NoteController (FundooNoteApp).
+2023-10-09 12:41:07.0145 DEBUG Execution plan of authorization filters (in the following order): None
+2023-10-09 12:41:07.0145 DEBUG Execution plan of resource filters (in the following order): None
+2023-10-09 12:41:07.0145 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-10-09 12:41:07.0145 DEBUG Execution plan of exception filters (in the following order): None
+2023-10-09 12:41:07.0145 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-10-09 12:41:07.0145 DEBUG Executing controller factory for controller FundooNoteApp.Controllers.NoteController (FundooNoteApp)
+2023-10-09 12:41:07.0145 DEBUG Executed controller factory for controller FundooNoteApp.Controllers.NoteController (FundooNoteApp)
+2023-10-09 12:41:07.0145 TRACE Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.
+2023-10-09 12:41:07.0145 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:41:07.0145 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:41:07.0145 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:41:07.0145 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:41:07.0145 INFO Executing action method FundooNoteApp.Controllers.NoteController.GetAllNote (FundooNoteApp) - Validation state: Valid
+2023-10-09 12:41:07.0321 INFO Entity Framework Core 3.1.0 initialized 'FundooContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-10-09 12:41:07.0429 DEBUG queryContext => new QueryingEnumerable<NoteEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, NoteEntity>, 
+    RepoLayer.Context.FundooContext, 
+    DiagnosticsLogger<Query>
+)
+2023-10-09 12:41:07.0429 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-10-09 12:41:07.0429 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-09 12:41:07.0429 DEBUG Opening connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:41:07.0429 DEBUG Opened connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:41:07.0429 DEBUG Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [n].[NoteID], [n].[Color], [n].[Createat], [n].[Image], [n].[IsArchive], [n].[IsPin], [n].[IsTrash], [n].[Modifiedat], [n].[Note], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [NoteTable] AS [n]
+WHERE [n].[UserId] = @__userId_0
+2023-10-09 12:41:07.0429 INFO Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [n].[NoteID], [n].[Color], [n].[Createat], [n].[Image], [n].[IsArchive], [n].[IsPin], [n].[IsTrash], [n].[Modifiedat], [n].[Note], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [NoteTable] AS [n]
+WHERE [n].[UserId] = @__userId_0
+2023-10-09 12:41:07.0602 DEBUG Context 'FundooContext' started tracking 'NoteEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-09 12:41:07.0602 DEBUG A data reader was disposed.
+2023-10-09 12:41:07.0602 DEBUG Closing connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:41:07.0602 DEBUG Closed connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 12:41:07.0602 INFO Executed action method FundooNoteApp.Controllers.NoteController.GetAllNote (FundooNoteApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 47.9089ms.
+2023-10-09 12:41:07.0602 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:41:07.0602 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 12:41:07.0602 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:41:07.0602 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 12:41:07.0602 TRACE Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.
+2023-10-09 12:41:07.0602 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 12:41:07.0602 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 12:41:07.0602 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-10-09 12:41:07.0602 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-10-09 12:41:07.0602 DEBUG No information found on request to perform content negotiation.
+2023-10-09 12:41:07.0602 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-09 12:41:07.0602 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-09 12:41:07.0602 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-09 12:41:07.0602 INFO Executing ObjectResult, writing value of type 'CommonLayer.Model.ResponseModel`1[[System.Collections.Generic.List`1[[RepoLayer.Entity.NoteEntity, RepoLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-09 12:41:07.0602 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-10-09 12:41:07.0602 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 12:41:07.0602 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 12:41:07.0602 INFO Executed action FundooNoteApp.Controllers.NoteController.GetAllNote (FundooNoteApp) in 56.4854ms
+2023-10-09 12:41:07.0602 INFO Executed endpoint 'FundooNoteApp.Controllers.NoteController.GetAllNote (FundooNoteApp)'
+2023-10-09 12:41:11.1611 ERROR Error closing the session.
+2023-10-09 12:41:11.1626 DEBUG 'FundooContext' disposed.
+2023-10-09 12:41:11.1626 INFO Request finished in 4163.2804ms 200 application/json; charset=utf-8
+2023-10-09 15:49:17.0064 DEBUG The application Started
+2023-10-09 15:49:18.1459 DEBUG Hosting starting
+2023-10-09 15:49:18.2103 INFO User profile is available. Using 'C:\Users\Teju Reddy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-09 15:49:18.5188 DEBUG Reading data from file 'C:\Users\Teju Reddy\AppData\Local\ASP.NET\DataProtection-Keys\key-2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c.xml'.
+2023-10-09 15:49:18.5314 DEBUG Found key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c}.
+2023-10-09 15:49:18.5434 DEBUG Considering key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with expiration date 2023-11-27 07:29:19Z as default key.
+2023-10-09 15:49:18.5831 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-09 15:49:18.5915 DEBUG Decrypting secret element using Windows DPAPI.
+2023-10-09 15:49:18.5915 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-09 15:49:18.5915 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-10-09 15:49:18.5915 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-10-09 15:49:18.5915 DEBUG Using key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} as the default key.
+2023-10-09 15:49:18.5915 DEBUG Key ring with default key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} was loaded during application startup.
+2023-10-09 15:49:18.6041 DEBUG Starting host: rabbitmq://localhost/
+2023-10-09 15:49:18.6514 DEBUG Connect: guest@localhost:5672/
+2023-10-09 15:49:18.8314 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 52179)
+2023-10-09 15:49:18.9690 DEBUG Loaded hosting startup assembly FundooNoteApp
+2023-10-09 15:49:18.9690 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-10-09 15:49:18.9690 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-10-09 15:49:18.9690 INFO Application started. Press Ctrl+C to shut down.
+2023-10-09 15:49:18.9690 INFO Hosting environment: Development
+2023-10-09 15:49:18.9690 INFO Content root path: C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp
+2023-10-09 15:49:18.9690 DEBUG Hosting started
+2023-10-09 15:49:18.9976 INFO Request starting HTTP/2.0 GET https://localhost:44353/Swagger/index.html  
+2023-10-09 15:49:19.0243 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2023-10-09 15:49:19.0243 TRACE All hosts are allowed.
+2023-10-09 15:49:19.0465 DEBUG No candidates found for the request path '/Swagger/index.html'
+2023-10-09 15:49:19.0465 DEBUG Request did not match any endpoints
+2023-10-09 15:49:19.0465 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 15:49:19.1211 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-09 15:49:19.1676 DEBUG Response markup is scheduled to include browser refresh script injection.
+2023-10-09 15:49:19.3588 INFO Request starting HTTP/2.0 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js  
+2023-10-09 15:49:19.3588 INFO Request starting HTTP/2.0 GET https://localhost:44353/_vs/browserLink  
+2023-10-09 15:49:19.3782 INFO Request finished in 10.7634ms 200 application/javascript; charset=utf-8
+2023-10-09 15:49:19.4299 INFO Request finished in 71.0739ms 200 text/javascript; charset=UTF-8
+2023-10-09 15:49:28.8478 ERROR Error closing the session.
+2023-10-09 15:49:28.8513 DEBUG Response markup was updated to include browser refresh script injection.
+2023-10-09 15:49:28.8513 INFO Request finished in 9858.6406ms 200 text/html;charset=utf-8
+2023-10-09 15:49:28.9005 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/v1/swagger.json  
+2023-10-09 15:49:28.9005 TRACE All hosts are allowed.
+2023-10-09 15:49:28.9005 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-09 15:49:28.9005 DEBUG Request did not match any endpoints
+2023-10-09 15:49:28.9005 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 15:49:28.9005 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-09 15:49:33.0912 ERROR Error closing the session.
+2023-10-09 15:49:33.0912 INFO Request finished in 4192.1794ms 200 application/json;charset=utf-8
+2023-10-09 15:50:11.8612 INFO Request starting HTTP/2.0 POST https://localhost:44353/api/User/Login application/json 72
+2023-10-09 15:50:11.8612 TRACE All hosts are allowed.
+2023-10-09 15:50:11.8756 DEBUG 1 candidate(s) found for the request path '/api/User/Login'
+2023-10-09 15:50:11.8756 DEBUG Endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)' with route pattern 'api/User/Login' is valid for the request path '/api/User/Login'
+2023-10-09 15:50:11.8756 DEBUG Request matched endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)'
+2023-10-09 15:50:11.8756 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 15:50:11.8756 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-09 15:50:11.8756 INFO Executing endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)'
+2023-10-09 15:50:11.8756 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2023-10-09 15:50:11.9194 INFO Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(CommonLayer.Model.LoginModel) on controller FundooNoteApp.Controllers.UserController (FundooNoteApp).
+2023-10-09 15:50:11.9194 DEBUG Execution plan of authorization filters (in the following order): None
+2023-10-09 15:50:11.9194 DEBUG Execution plan of resource filters (in the following order): None
+2023-10-09 15:50:11.9194 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-10-09 15:50:11.9194 DEBUG Execution plan of exception filters (in the following order): None
+2023-10-09 15:50:11.9194 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-10-09 15:50:11.9194 DEBUG Executing controller factory for controller FundooNoteApp.Controllers.UserController (FundooNoteApp)
+2023-10-09 15:50:12.0837 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-10-09 15:50:12.1188 DEBUG Executed controller factory for controller FundooNoteApp.Controllers.UserController (FundooNoteApp)
+2023-10-09 15:50:12.1290 DEBUG Attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel' ...
+2023-10-09 15:50:12.1290 DEBUG Attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel' using the name '' in request data ...
+2023-10-09 15:50:12.1290 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-09 15:50:12.1484 DEBUG JSON input formatter succeeded, deserializing to type 'CommonLayer.Model.LoginModel'
+2023-10-09 15:50:12.1484 DEBUG Done attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel'.
+2023-10-09 15:50:12.1484 DEBUG Done attempting to bind parameter 'loginModel' of type 'CommonLayer.Model.LoginModel'.
+2023-10-09 15:50:12.1484 DEBUG Attempting to validate the bound parameter 'loginModel' of type 'CommonLayer.Model.LoginModel' ...
+2023-10-09 15:50:12.1484 DEBUG Done attempting to validate the bound parameter 'loginModel' of type 'CommonLayer.Model.LoginModel'.
+2023-10-09 15:50:12.1566 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 15:50:12.1566 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 15:50:12.1566 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 15:50:12.1566 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 15:50:12.1566 INFO Executing action method FundooNoteApp.Controllers.UserController.Login (FundooNoteApp) - Validation state: Valid
+2023-10-09 15:50:12.1566 TRACE Executing action method FundooNoteApp.Controllers.UserController.Login (FundooNoteApp) with arguments (CommonLayer.Model.LoginModel)
+2023-10-09 15:50:12.8688 INFO Entity Framework Core 3.1.0 initialized 'FundooContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-10-09 15:50:13.1794 DEBUG queryContext => new QueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserEntity>, 
+    RepoLayer.Context.FundooContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2023-10-09 15:50:13.2283 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-10-09 15:50:13.4367 DEBUG Created DbCommand for 'ExecuteReader' (207ms).
+2023-10-09 15:50:13.4536 DEBUG Opening connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 15:50:13.6608 DEBUG Opened connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 15:50:13.6762 DEBUG Executing DbCommand [Parameters=[@__loginModel_EmailId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[EmailId], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[EmailId] = @__loginModel_EmailId_0
+2023-10-09 15:50:13.7350 INFO Executed DbCommand (70ms) [Parameters=[@__loginModel_EmailId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[EmailId], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE [u].[EmailId] = @__loginModel_EmailId_0
+2023-10-09 15:50:13.7697 DEBUG Context 'FundooContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-09 15:50:13.8044 DEBUG A data reader was disposed.
+2023-10-09 15:50:13.8044 DEBUG Closing connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 15:50:13.8044 DEBUG Closed connection to database 'FundooDB' on server 'LAPTOP-IB990ERS\SQLEXPRESS'.
+2023-10-09 15:50:14.0235 INFO Login Successful
+2023-10-09 15:50:14.0235 INFO Executed action method FundooNoteApp.Controllers.UserController.Login (FundooNoteApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1861.6802ms.
+2023-10-09 15:50:14.0235 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 15:50:14.0235 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-10-09 15:50:14.0235 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 15:50:14.0235 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-10-09 15:50:14.0235 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 15:50:14.0235 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 15:50:14.0235 TRACE Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-10-09 15:50:14.0375 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-10-09 15:50:14.0375 DEBUG No information found on request to perform content negotiation.
+2023-10-09 15:50:14.0375 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-09 15:50:14.0375 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-09 15:50:14.0375 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-09 15:50:14.0375 INFO Executing ObjectResult, writing value of type 'CommonLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-09 15:50:14.0375 TRACE After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-10-09 15:50:14.0375 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 15:50:14.0375 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-10-09 15:50:14.0588 INFO Executed action FundooNoteApp.Controllers.UserController.Login (FundooNoteApp) in 2132.6505ms
+2023-10-09 15:50:14.0588 INFO Executed endpoint 'FundooNoteApp.Controllers.UserController.Login (FundooNoteApp)'
+2023-10-09 15:50:18.1565 ERROR Error closing the session.
+2023-10-09 15:50:18.1565 DEBUG 'FundooContext' disposed.
+2023-10-09 15:50:18.1565 INFO Request finished in 6304.5553ms 200 application/json; charset=utf-8
