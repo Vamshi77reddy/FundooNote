@@ -613,3 +613,49 @@ WHERE [u].[EmailId] = @__loginModel_EmailId_0
 2023-10-09 15:50:18.1565 ERROR Error closing the session.
 2023-10-09 15:50:18.1565 DEBUG 'FundooContext' disposed.
 2023-10-09 15:50:18.1565 INFO Request finished in 6304.5553ms 200 application/json; charset=utf-8
+2023-10-09 17:32:57.6484 DEBUG The application Started
+2023-10-09 17:33:01.6240 DEBUG Hosting starting
+2023-10-09 17:33:01.7484 INFO User profile is available. Using 'C:\Users\Teju Reddy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-09 17:33:02.8149 DEBUG Reading data from file 'C:\Users\Teju Reddy\AppData\Local\ASP.NET\DataProtection-Keys\key-2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c.xml'.
+2023-10-09 17:33:02.8590 DEBUG Found key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c}.
+2023-10-09 17:33:02.8810 DEBUG Considering key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with expiration date 2023-11-27 07:29:19Z as default key.
+2023-10-09 17:33:03.0498 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-09 17:33:03.0625 DEBUG Decrypting secret element using Windows DPAPI.
+2023-10-09 17:33:03.0829 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-09 17:33:03.0893 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-10-09 17:33:03.0893 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-10-09 17:33:03.0893 DEBUG Using key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} as the default key.
+2023-10-09 17:33:03.0893 DEBUG Key ring with default key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} was loaded during application startup.
+2023-10-09 17:33:03.1058 DEBUG Starting host: rabbitmq://localhost/
+2023-10-09 17:33:03.1823 DEBUG Connect: guest@localhost:5672/
+2023-10-09 17:33:03.8669 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 49998)
+2023-10-09 17:33:04.1199 DEBUG Loaded hosting startup assembly FundooNoteApp
+2023-10-09 17:33:04.1199 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-10-09 17:33:04.1199 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-10-09 17:33:04.1199 INFO Application started. Press Ctrl+C to shut down.
+2023-10-09 17:33:04.1199 INFO Hosting environment: Development
+2023-10-09 17:33:04.1199 INFO Content root path: C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp
+2023-10-09 17:33:04.1199 DEBUG Hosting started
+2023-10-09 17:33:04.1879 INFO Request starting HTTP/2.0 GET https://localhost:44353/Swagger/index.html  
+2023-10-09 17:33:04.2284 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2023-10-09 17:33:04.2284 TRACE All hosts are allowed.
+2023-10-09 17:33:04.2579 DEBUG No candidates found for the request path '/Swagger/index.html'
+2023-10-09 17:33:04.2579 DEBUG Request did not match any endpoints
+2023-10-09 17:33:04.2579 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 17:33:04.3828 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-09 17:33:04.4616 DEBUG Response markup is scheduled to include browser refresh script injection.
+2023-10-09 17:33:04.7475 INFO Request starting HTTP/2.0 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js  
+2023-10-09 17:33:04.7475 INFO Request starting HTTP/2.0 GET https://localhost:44353/_vs/browserLink  
+2023-10-09 17:33:04.7475 INFO Request finished in 8.3802ms 200 application/javascript; charset=utf-8
+2023-10-09 17:33:05.0190 INFO Request finished in 264.4108ms 200 text/javascript; charset=UTF-8
+2023-10-09 17:33:14.6888 ERROR Error closing the session.
+2023-10-09 17:33:14.6971 DEBUG Response markup was updated to include browser refresh script injection.
+2023-10-09 17:33:14.6971 INFO Request finished in 10518.7715ms 200 text/html;charset=utf-8
+2023-10-09 17:33:14.7634 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/v1/swagger.json  
+2023-10-09 17:33:14.7634 TRACE All hosts are allowed.
+2023-10-09 17:33:14.7634 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-09 17:33:14.7634 DEBUG Request did not match any endpoints
+2023-10-09 17:33:14.7634 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-09 17:33:14.7634 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-09 17:33:19.0150 ERROR Error closing the session.
+2023-10-09 17:33:19.0150 INFO Request finished in 4252.7158ms 200 application/json;charset=utf-8

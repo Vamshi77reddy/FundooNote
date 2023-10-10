@@ -49,7 +49,7 @@
                 {
                     return null;
                 }
-          }
+            }
             catch (Exception)
             {
                 throw;
@@ -120,7 +120,7 @@
                     Subject = new ClaimsIdentity(new Claim[]
                     {
                         new Claim("Email", EmailId.ToString()),
-                        new Claim("UserId",UserId.ToString()),
+                        new Claim("UserId", UserId.ToString()),
                     }),
                     Expires = DateTime.UtcNow.AddHours(1),
                     SigningCredentials = new SigningCredentials(LoginTokenKey, SecurityAlgorithms.HmacSha256Signature),
@@ -134,17 +134,6 @@
             }
         }
 
-        //public ForgetPasswordModel UserForgetPassword(string email)
-        //{
-        //    try
-        //    {
-
-        //        var result = fundooContext.UserTable.FirstOrDefault(x => x.EmailId == email);
-        //        ForgetPasswordModel forgetPassword = new ForgetPasswordModel();
-        //        forgetPassword.EmailId = result.EmailId;
-        //        forgetPassword.Token = GenerateJwtToken(result.EmailId, result.UserId);
-        //        forgetPassword.UserId = result.UserId;
-        //        return forgetPassword;
         public ForgetPasswordModel UserForgetPassword(ForgetPasswordModel forgetPasswordModel)
             {
             try
@@ -159,10 +148,6 @@
                 }
 
                 return null;
-                //ForgetPasswordModel forgotPasswordModel = new ForgetPasswordModel();
-                //forgotPasswordModel.EmailId = result.EmailId;
-                //forgotPasswordModel.Token = GenerateJwtToken(result.EmailId, result.UserId);
-                //forgotPasswordModel.UserId = result.UserId;
             }
             catch (Exception e)
             {
@@ -208,4 +193,4 @@
             }
         }
     }
-    }
+}
