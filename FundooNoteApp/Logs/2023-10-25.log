@@ -1,0 +1,95 @@
+2023-10-25 14:43:27.3200 DEBUG The application Started
+2023-10-25 14:43:28.6846 DEBUG Hosting starting
+2023-10-25 14:43:28.7225 INFO User profile is available. Using 'C:\Users\Teju Reddy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-25 14:43:29.2101 DEBUG Reading data from file 'C:\Users\Teju Reddy\AppData\Local\ASP.NET\DataProtection-Keys\key-2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c.xml'.
+2023-10-25 14:43:29.2343 DEBUG Found key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c}.
+2023-10-25 14:43:29.2441 DEBUG Considering key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with expiration date 2023-11-27 07:29:19Z as default key.
+2023-10-25 14:43:29.2665 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-25 14:43:29.2665 DEBUG Decrypting secret element using Windows DPAPI.
+2023-10-25 14:43:29.2705 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-25 14:43:29.2705 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-10-25 14:43:29.2705 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-10-25 14:43:29.2705 DEBUG Using key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} as the default key.
+2023-10-25 14:43:29.2705 DEBUG Key ring with default key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} was loaded during application startup.
+2023-10-25 14:43:29.2705 DEBUG Starting host: rabbitmq://localhost/
+2023-10-25 14:43:29.3147 DEBUG Connect: guest@localhost:5672/
+2023-10-25 14:43:29.5174 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 62239)
+2023-10-25 14:43:29.5561 DEBUG Loaded hosting startup assembly FundooNoteApp
+2023-10-25 14:43:29.5561 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-10-25 14:43:29.5561 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-10-25 14:43:29.5561 INFO Application started. Press Ctrl+C to shut down.
+2023-10-25 14:43:29.5561 INFO Hosting environment: Development
+2023-10-25 14:43:29.5561 INFO Content root path: C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp
+2023-10-25 14:43:29.5561 DEBUG Hosting started
+2023-10-25 14:43:29.5753 INFO Request starting HTTP/2.0 GET https://localhost:44353/Swagger  
+2023-10-25 14:43:29.5927 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2023-10-25 14:43:29.5927 TRACE All hosts are allowed.
+2023-10-25 14:43:29.6198 DEBUG No candidates found for the request path '/Swagger'
+2023-10-25 14:43:29.6198 DEBUG Request did not match any endpoints
+2023-10-25 14:43:29.6198 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-25 14:43:29.6555 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-25 14:43:39.1281 ERROR Error closing the session.
+2023-10-25 14:43:39.1646 DEBUG Connection ID "18230571300991008769" disconnecting.
+2023-10-25 14:43:39.1646 INFO Request starting HTTP/2.0 GET https://localhost:44353/Swagger/index.html  
+2023-10-25 14:43:39.1725 TRACE All hosts are allowed.
+2023-10-25 14:43:39.1725 INFO Request finished in 9598.1808ms 301 
+2023-10-25 14:43:39.1725 DEBUG No candidates found for the request path '/Swagger/index.html'
+2023-10-25 14:43:39.1725 DEBUG Request did not match any endpoints
+2023-10-25 14:43:39.1725 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-25 14:43:39.1725 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-25 14:43:39.2076 DEBUG Response markup is scheduled to include browser refresh script injection.
+2023-10-25 14:43:39.3626 INFO Request starting HTTP/2.0 GET https://localhost:44353/Swagger/swagger-ui-bundle.js  
+2023-10-25 14:43:39.3626 INFO Request starting HTTP/2.0 GET https://localhost:44353/Swagger/swagger-ui.css  
+2023-10-25 14:43:39.3626 INFO Request starting HTTP/2.0 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js  
+2023-10-25 14:43:39.3626 INFO Request starting HTTP/2.0 GET https://localhost:44353/Swagger/swagger-ui-standalone-preset.js  
+2023-10-25 14:43:39.3626 TRACE All hosts are allowed.
+2023-10-25 14:43:39.3626 TRACE All hosts are allowed.
+2023-10-25 14:43:39.3626 TRACE All hosts are allowed.
+2023-10-25 14:43:39.3626 DEBUG No candidates found for the request path '/Swagger/swagger-ui-standalone-preset.js'
+2023-10-25 14:43:39.3626 DEBUG No candidates found for the request path '/Swagger/swagger-ui-bundle.js'
+2023-10-25 14:43:39.3626 DEBUG Request did not match any endpoints
+2023-10-25 14:43:39.3626 DEBUG Request did not match any endpoints
+2023-10-25 14:43:39.3626 DEBUG No candidates found for the request path '/Swagger/swagger-ui.css'
+2023-10-25 14:43:39.3626 DEBUG Request did not match any endpoints
+2023-10-25 14:43:39.3626 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-25 14:43:39.3626 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-25 14:43:39.3626 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-25 14:43:39.3626 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-25 14:43:39.3626 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-25 14:43:39.3626 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-25 14:43:39.3626 INFO Request finished in 3.1104ms 200 application/javascript; charset=utf-8
+2023-10-25 14:43:39.3626 INFO Request starting HTTP/2.0 GET https://localhost:44353/_vs/browserLink  
+2023-10-25 14:43:39.3626 TRACE Range header's value is empty.
+2023-10-25 14:43:39.3626 TRACE Range header's value is empty.
+2023-10-25 14:43:39.3626 TRACE Range header's value is empty.
+2023-10-25 14:43:39.3859 INFO Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-10-25 14:43:39.3859 INFO Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-25 14:43:39.3859 INFO Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-25 14:43:39.4485 INFO Request finished in 81.8485ms 200 text/javascript; charset=UTF-8
+2023-10-25 14:43:48.4705 ERROR Error closing the session.
+2023-10-25 14:43:48.4705 DEBUG Response markup was updated to include browser refresh script injection.
+2023-10-25 14:43:48.4705 INFO Request finished in 9305.472ms 200 text/html;charset=utf-8
+2023-10-25 14:43:52.5358 ERROR Error closing the session.
+2023-10-25 14:43:52.5358 INFO Request finished in 13174.3926ms 200 text/css
+2023-10-25 14:43:56.6369 ERROR Error closing the session.
+2023-10-25 14:43:56.6369 INFO Request finished in 17275.2908ms 200 application/javascript
+2023-10-25 14:44:05.8118 ERROR Error closing the session.
+2023-10-25 14:44:05.8118 INFO Request finished in 26450.0569ms 200 application/javascript
+2023-10-25 14:44:06.0849 INFO Request starting HTTP/2.0 GET https://localhost:44353/swagger/v1/swagger.json  
+2023-10-25 14:44:06.0849 TRACE All hosts are allowed.
+2023-10-25 14:44:06.0849 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-25 14:44:06.0849 DEBUG Request did not match any endpoints
+2023-10-25 14:44:06.0849 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-25 14:44:06.0849 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-25 14:44:06.1092 INFO Request starting HTTP/2.0 GET https://localhost:44353/Swagger/favicon-32x32.png  
+2023-10-25 14:44:06.1092 TRACE All hosts are allowed.
+2023-10-25 14:44:06.1092 DEBUG No candidates found for the request path '/Swagger/favicon-32x32.png'
+2023-10-25 14:44:06.1092 DEBUG Request did not match any endpoints
+2023-10-25 14:44:06.1092 TRACE Performing protect operation to key {2bd0fb4a-6afe-4e6b-b667-eec47e07ba6c} with purposes ('C:\Users\Teju Reddy\source\repos\FundooNote\FundooNoteApp', 'SessionMiddleware').
+2023-10-25 14:44:06.1092 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-10-25 14:44:06.1092 TRACE Range header's value is empty.
+2023-10-25 14:44:06.1092 INFO Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-10-25 14:44:15.2340 ERROR Error closing the session.
+2023-10-25 14:44:15.2340 INFO Request finished in 9126.4514ms 200 image/png
+2023-10-25 14:44:24.3747 ERROR Error closing the session.
+2023-10-25 14:44:24.3747 INFO Request finished in 18291.17ms 200 application/json;charset=utf-8

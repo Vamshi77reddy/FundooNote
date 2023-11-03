@@ -112,8 +112,8 @@ namespace FundooNoteApp.Controllers
 
                 if (result != null)
                 {
-                    Send send = new Send();
-                               send.SendingMail(forgetPasswordModel.EmailId, forgetPasswordModel.Token);
+                     Send send = new Send();
+                               send.SendingMail(forgetPasswordModel.EmailId, forgetPasswordModel.Token);//mail sent to user
                                Uri uri = new Uri("rabbitmq://localhost//FundoNotesEmail_Queue");
                                var endPoint = await bus.GetSendEndpoint(uri);
                                await endPoint.Send(forgetPasswordModel);
@@ -128,7 +128,7 @@ namespace FundooNoteApp.Controllers
             catch (Exception ex) 
             { throw ex; }
         }
-        [Authorize]
+         [Authorize]
         [HttpPost("ResetPassword")]
         public IActionResult ResetPassword(ResetPasswordModel resetPasswordModel)
         {

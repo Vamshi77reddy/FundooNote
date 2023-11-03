@@ -1,0 +1,10 @@
+C:\Users\Teju Reddy\source\repos\FundooNote\CommonLayer\bin\Release\netcoreapp3.1\CommonLayer.deps.json
+C:\Users\Teju Reddy\source\repos\FundooNote\CommonLayer\bin\Release\netcoreapp3.1\CommonLayer.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\CommonLayer\bin\Release\netcoreapp3.1\CommonLayer.pdb
+C:\Users\Teju Reddy\source\repos\FundooNote\CommonLayer\obj\Release\netcoreapp3.1\CommonLayer.csproj.AssemblyReference.cache
+C:\Users\Teju Reddy\source\repos\FundooNote\CommonLayer\obj\Release\netcoreapp3.1\CommonLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Teju Reddy\source\repos\FundooNote\CommonLayer\obj\Release\netcoreapp3.1\CommonLayer.AssemblyInfoInputs.cache
+C:\Users\Teju Reddy\source\repos\FundooNote\CommonLayer\obj\Release\netcoreapp3.1\CommonLayer.AssemblyInfo.cs
+C:\Users\Teju Reddy\source\repos\FundooNote\CommonLayer\obj\Release\netcoreapp3.1\CommonLayer.csproj.CoreCompileInputs.cache
+C:\Users\Teju Reddy\source\repos\FundooNote\CommonLayer\obj\Release\netcoreapp3.1\CommonLayer.dll
+C:\Users\Teju Reddy\source\repos\FundooNote\CommonLayer\obj\Release\netcoreapp3.1\CommonLayer.pdb

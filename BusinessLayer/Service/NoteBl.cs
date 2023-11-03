@@ -6,6 +6,7 @@ using RepoLayer.Interface;
 using RepoLayer.Services;
 using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 
 namespace BusinessLayer.Service
@@ -62,6 +63,15 @@ namespace BusinessLayer.Service
         public string UploadImage(long userId, long noteid, IFormFile image)
         {
             return this.noteRl.UploadImage(userId, noteid, image);
+        }
+        public NoteEntity GetNoteByName(long userId, string noteName)
+        {
+            return this.GetNoteByName(userId, noteName);
+        }
+
+        public List<NoteEntity> NotebyDate(long userId, DateTime date)
+        {
+            return this.NotebyDate(userId, date);
         }
 
     }

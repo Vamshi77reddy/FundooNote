@@ -17,9 +17,14 @@ namespace BusinessLayer.Interface
         public bool IsTrash(long userId, long noteId);
         public bool IsArchive(long userId, long noteId);
         public bool DeleteNote(long userId, long noteId);
+        public NoteEntity GetNoteByName(long userId, string noteName);
+
         public NoteEntity Color(long userId, long noteId, string color);
         public DateTime Reminder(long userId, long noteId, DateTime reminder);
         public string UploadImage(long userId, long noteid, IFormFile image);
+        public List<NoteEntity> NotebyDate(long userId, DateTime date);
+
+
 
 
 

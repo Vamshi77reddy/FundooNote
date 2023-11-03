@@ -257,6 +257,43 @@ namespace FundooNoteApp.Controllers
             }
             catch (Exception ex) { throw ex; }
         }
+
+        [HttpGet("GetByNoteName")]
+        public IActionResult getByNoteName(string noteName)
+        {
+            long userId= Convert.ToInt32(User.Claims.FirstOrDefault(x=>x.Type == "UserId").Value);
+            var result=inoteBl.GetNoteByName(userId, noteName);
+            if(result != null)
+            {
+                return Ok(new ResponseModel<NoteEntity> { Status = true, Message = "NoteGetting Successfully", Data = result });
+
+            }
+            else
+            {
+                return BadRequest(new ResponseModel<NoteEntity> { Status = false, Message = "NoteGetting unSuccessfully", Data = result });
+
+            }
+        }
+
+
+        [HttpGet("GetByDate")]
+        public IActionResult getByDate()
+        {
+            DateTime date=DateTime.Now;
+            long userId=Convert.ToInt32(User.Claims.FirstOrDefault(x=> x.Type == "UserId").Value);
+            var result=inoteBl.NotebyDate(userId, date);
+            if(result != null)
+            {
+                return Ok(new ResponseModel<List<NoteEntity>> { Status = true, Message = "NoteGetting Successfully", Data = result });
+
+            }
+            else
+            {
+                return BadRequest(new ResponseModel<List<NoteEntity>> { Status = false, Message = "NoteGetting unSuccessfully", Data = result });
+
+            }
+        }
+
     }
 
 }

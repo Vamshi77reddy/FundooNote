@@ -19,6 +19,10 @@ namespace RepoLayer.Interface
         public NoteEntity Color(long userId, long noteId, string color);
         public DateTime Reminder(long userId, long noteId, DateTime reminder);
         public string UploadImage(long userId, long noteid, IFormFile image);
+        public NoteEntity GetNoteByName(long userId, string noteName);
+        public List<NoteEntity> NotebyDate(long userId, DateTime date);
+
+
 
 
 

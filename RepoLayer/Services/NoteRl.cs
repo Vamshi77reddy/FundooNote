@@ -279,5 +279,20 @@ namespace RepoLayer.Services
                 throw ex;
             }
         }
+        public NoteEntity GetNoteByName(long  userId,string noteName)
+        {
+            List<NoteEntity> noteEntities = new List<NoteEntity>();
+            noteEntities=this.fundooContext.NoteTable.Where(x=>x.UserId==userId).ToList();
+            NoteEntity notes=noteEntities.FirstOrDefault(x=>x.Title==noteName);
+            return notes;
+
+        }
+
+        public List<NoteEntity> NotebyDate(long userId, DateTime date)
+        {
+            List<NoteEntity> notes = new List<NoteEntity>();
+            notes=fundooContext.NoteTable.Where(x=>x.UserId==userId&& x.Modifiedat == date).ToList();
+            return notes;
+        }
     }
 }
